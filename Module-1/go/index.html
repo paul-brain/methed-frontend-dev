@@ -60,6 +60,76 @@
 		<li><a href="wildwest.html">Wild west</a></li>
 		<li><a href="neon.html">Neon style</a></li>
 	</ol>
+	<h2>Забронировать</h2>
+	<form action="https://jsonplaceholder.typicode.com/posts" method="post">
+		<fieldset>
+			<input type="radio" name="hall" id="hall" value="80's vibes">
+			<label for="hall">80's vibes</label>
+			<input type="radio" name="hall" id="hall2" value="Star wars">
+			<label for="hall2">star wars</label>
+			<input type="radio" name="hall" id="hall3" value="Wild west">
+			<label for="hall3">wild west</label>
+			<input type="radio" name="hall" id="hall4" value="Neon style">
+			<label for="hall4">neon style</label>
+		</fieldset>
+		<fieldset>
+			<legend>Собери набор развлечений</legend>
+			<fieldset>
+				<legend>Приставка</legend>
+				<input type="radio" name="game_console" id="game_console" value="PlayStation">
+				<label for="game_console">PlayStation</label>
+				<input type="radio" name="game_console" id="game_console2" value="Sega Mega Drive">
+				<label for="game_console2">Sega Mega Drive</label>
+				<input type="radio" name="game_console" id="game_console3" value="X-box One S">
+				<label for="game_console4">X-box One S</label>
+				<input type="radio" name="game_console" id="game_console4" value="Dendy">
+				<label for="game_console4">Dendy</label>
+			</fieldset>
+			<fieldset>
+				<legend>Настольные игры</legend>
+				<input type="checkbox" name="jenga" id="game" value="jenga">
+				<label for="game_console">Jenga</label>
+				<input type="checkbox" name="monopoly" id="game2" value="monopoly">
+				<label for="game_console2">Monopoly</label>
+				<input type="checkbox" name="manchkin" id="game3" value="manchkin">
+				<label for="game_console4">Манчкин</label>
+				<input type="checkbox" name="Alias" id="game4" value="alias">
+				<label for="game_console4">Alias</label>
+			</fieldset>
+			<fieldset>
+				<legend>Дополнительно</legend>
+				<input type="checkbox" name="dop" id="dop" value="karaoke">
+				<label for="game_console">Караоке</label>
+				<input type="checkbox" name="dop" id="dop2" value="vr">
+				<label for="game_console2">VR</label>				
+			</fieldset>
+			<fieldset>
+				<legend>Выбери дату и время</legend>
+				<label for="date">Дата *</label>
+				<input type="date" name="date" id="date" required>
+				<label for="time">Время *</label>
+				<input type="time" name="time" id="time" required>
+				<br>
+				<label for="count">Количество человек *</label>
+				<input type="text" name="count" id="count" required>
+				<br>
+				<label for="firstname">Имя *</label>
+				<input type="text" name="firstname" id="firstname" required>
+				<br>
+				<label for="lastname">Фамилия *</label>
+				<input type="text" name="lastname" id="lastname" required>
+				<br>
+				<label for="phone_number">Номер телефона *</label>
+				<input type="number" name="phone_number" id="phone_number" required>
+				<br>
+				<input type="checkbox" name="age" id="age">
+				<label for="age">Я старше 18 лет</label>
+			</fieldset>
+			<button type="submit">Забронировать</button>
+			<input type="checkbox" name="agree" id="agree" required>
+			<label for="agree">Согласен на обработку данных</label>
+		</fieldset>
+	</form>
 	<h3>О нас</h3>
 	<p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
 	<p>Каждый день мы сотараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
