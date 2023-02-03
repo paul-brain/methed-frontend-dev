@@ -13,14 +13,17 @@
     font-size: 24px;
 }
 
+#faq li:last-child {
+    margin-bottom: 0;
+}
+
 #faq li:nth-child(even) {
     color: #fff;
     background-color: #440F51;
 }
 
 #faq li::before {
-    content: "";
-    display: inline-block;    
+    content: "";    
     width: 46px;
     height: 46px;    
     position: absolute;
