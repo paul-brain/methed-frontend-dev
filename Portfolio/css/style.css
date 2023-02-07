@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #050404;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.logo, .menu, .search {
+    display: inline-block;
+    margin: 60px 0 80px;
+    vertical-align: top;
+    height: 55px;
+}
+
+.menu {
+    list-style: none;
+}
+.menu__item {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.first-screen {
+    font-size: 1em;
+}
