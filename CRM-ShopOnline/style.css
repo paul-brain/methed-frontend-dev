@@ -25,12 +25,24 @@ body {
 .blog-article__strong {
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
 }
 
-.blog-article__list {
+.blog-article__nav-items {
   font-size: 16px;
   line-height: 24px;
   color: #525252;
+}
+
+.blog-article__item {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.blog-article__item:hover {
+  text-decoration: underline;
+  color: #2d2d2d;
 }
 
 .blog-article img {
