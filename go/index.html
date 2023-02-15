@@ -10,11 +10,12 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header>
-			<img src="img/logo.png" alt="Логотип Go">
+		<header class="header">
+			<h1 class="header__title">Game over</h1>
+			<p class="header__subtitle">Новый формат игр и отдыха</p>
 		</header>
 		<main>
-			<nav>
+			<!-- <nav>
 				<h1>Меню</h1>
 				<ul>
 					<li><a href="#halls">Залы</a></li>
@@ -23,8 +24,8 @@
 					<li><a href="#testimonials">Отзывы</a></li>
 					<li><a href="#contacts">Контакты</a></li>
 				</ul>
-			</nav>
-			<section>
+			</nav> -->
+			<!-- <section>
 				<h2>У нас есть всё для классного отдыха с друзьями!</h2>
 				<ul>
 					<li>
@@ -64,18 +65,28 @@
 						</figure>
 					</li>
 				</ul>
+			</section> -->
+			<section class="halls">
+				<h2 class="halls__title">Наши залы</h2>        
+				<div class="halls__item">
+          <img class="halls-1" src="img/our-halls-80s-vibes.jpg" alt="80's vibes">
+          <p class="halls__name">80's vibes</p>
+        </div>
+        <div class="halls__item">
+          <img class="halls-2" src="img/our-halls-star-wars.jpg" alt="Star wars">
+          <p class="halls__name">Star wars</p>
+        </div>
+        <div class="halls__item">
+          <img class="halls-3" src="img/our-halls-wild-west.jpg" alt="Wild west">
+          <p class="halls__name">Wild west</p>
+        </div>
+        <div class="halls__item">
+          <img class="halls-4" src="img/our-halls-neon-style.jpg" alt="Neon style">
+          <p class="halls__name">Neon style</p>
+        </div>
 			</section>
-			<section id="halls">
-				<h2>Наши залы</h2>
-				<ol>
-					<li><a href="vibes.html" >80's vibes</a></li>
-					<li><a href="starwars.html">Star wars</a></li>
-					<li><a href="wildwest.html">Wild west</a></li>
-					<li><a href="neon.html">Neon style</a></li>
-				</ol>
-			</section>
-			<section id="reservation">
-				<h2>Забронировать зал просто</h2>
+			<section class="reservation">
+				<h2 class="reservation__title">Забронировать</h2>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="post">
 					<fieldset>
 						<legend>Выбери зал</legend>
@@ -147,16 +158,18 @@
 					</fieldset>
 				</form>
 			</section>
-			<article>
-				<h3 id="about">О нас</h3>
-				<p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
-				<p>Каждый день мы сотараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+			<section class="about">
+				<h2 class="about__title">О нас</h2>
+				<div class="about__text">
+          <p>Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+          <p>Каждый день мы сотараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+        </div>
 				<blockquote>
-					<p><b>GAME OVER</b> – это место незабываемых впечатлений</p>
+					<p>GAME OVER – <br>это место незабываемых впечатлений</p>
 					<cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
 				</blockquote>
-			</article>
-			<section id="testimonials">
+			</section>
+			<!-- <section id="testimonials">
 				<h3>Отзывы посетителей</h3>
 				<article>
 					<figure>
@@ -179,28 +192,35 @@
 					</figure>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta libero ipsa quis et distinctio cumque.</p>
 				</article>
-			</section>
-			<section id="faq">
-				<h2>Частые вопросы</h2>
-				<ul>
-					<li>Можно ли забронировть комнату онлайн?</li>
-					<li>Могут ли мне вернуть деньги за бронь!</li>
-					<li>Какая комната самая популярная?</li>
-					<li>Как получить VIP карту?</li>
-					<li>Какая комната самая популярная?</li>
+			</section> -->
+			<section class="faq">
+				<h2 class="faq__title">Частые вопросы</h2>
+				<ul class="faq__list">
+					<li class="faq__list-item">Можно ли забронировть комнату онлайн?</li>
+          <li class="faq__list-item">Могут ли мне вернуть деньги за бронь!</li>
+					<li class="faq__list-item">Какая комната самая популярная?</li>
+					<li class="faq__list-item">Как получить VIP карту?</li>
+					<li class="faq__list-item">Какая комната самая популярная?</li>
 				</ul>
 			</section>
 		</main>
 		<footer>
-			<section id="contacts">
-				<h3>Контакты</h3>
-				<p>г. Москва ул. Аквамарина, 16</p>
-				<p><a href="tel:+79509302893">8(950)930-28-93</a></p>
-				<p><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
-				<ul>
-					<li><a href="https://vk.com/gameover" target="_blank">Vkontakte</a></li>
-					<li><a href="https://t.me/gameover" target="_blank">Telegram</a></li>
+			<section class="contacts">
+				<h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+					<li class="contacts__list-item contacts__list-item--location">
+            <span>г. Москва</span>
+            <span>ул. Аквамарина, 16</span>
+          </li>
+          <li class="contacts__list-item contacts__list-item--phone"><a href="tel:+79509302893">8(950)930-28-93</a></li>
+					<li class="contacts__list-item contacts__list-item--email"><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></li>					
 				</ul>
+        <div class="social-links">
+          <a class="social-links__item social-links__item--vk" href="https://vk.com/gameover" title="Vkontakte" target="_blank"></a>
+          <a class="social-links__item social-links__item--tg" href="https://t.me/gameover" title="Telegram" target="_blank"></a>
+          <a class="social-links__item social-links__item--pi" href="https://pinterest.com/gameover" title="Pinterest" target="_blank"></a>
+          <a class="social-links__item social-links__item--st" href="https://vk.com/gameover" title="Stumbleupon" target="_blank"></a>
+        </div>
 			</section>
 		</footer>
 	</div>

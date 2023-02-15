@@ -1,18 +1,213 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #1B1A1B;
-    color: #FFFFFF;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;  
+  line-height: 28px;
+  font-weight: 400;  
+  color: #FFFFFF;
+  background-color: #1B1A1B;    
 }
 
-blockquote {
-    text-transform: uppercase;
+section {
+  margin-bottom: 100px;
+}
+
+section > h2 {
+  font-size: 40px;  
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .wrapper {
-    width: 1200px;
-    padding: 30px;
-    margin: 0 auto;
+  width: 1440px;
+  padding: 146px 130px 50px;
+  margin: 0 auto;    
+}
+
+.header {
+  height: 823px;
+  margin-bottom: 100px;
+  background-image: url("../img/man-with-vr.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 150px;  
+  line-height: 150px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: -15px;
+}
+
+.header__subtitle {
+  font-size: 28px;  
+  line-height: 50px;
+  font-weight: 400;
+  padding-left: 100px;
+}
+
+.halls__title {
+  margin-bottom: 60px;  
+}
+
+.halls__item {
+  position: relative;
+  margin-bottom: 60px;  
+}
+
+.halls__item img {
+  max-width: 100%;
+}
+
+.halls__item p {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 125px);
+  width: 250px;
+  margin: 0;
+  font-size: 70px;  
+  line-height: 80px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reservation__title {
+  margin-bottom: 60px;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__text {
+  margin-bottom: 70px;
+}
+
+.about p {
+  margin-bottom: 28px;
+}
+
+.about blockquote {
+  position: relative;
+  height: 230px;
+  margin: 0;
+  padding-left: 55px;
+  font-size: 44px;  
+  line-height: 50px;
+  font-weight: 400;  
+  text-transform: uppercase;  
+}
+
+.about blockquote p {
+  margin-bottom: 40px;
+}
+
+.about blockquote:before,
+.about blockquote:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 19px;
+  background: url("../img/quote.svg") no-repeat;
+}
+
+.about blockquote:after {  
+  top: 57px;
+  left: auto;
+  right: 100px;
+  transform: rotate(180deg);
+}
+
+.about blockquote cite {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 380px;
+  height: 85px;
+  padding-left: 110px;
+
+  background-image: url("../img/about-us-arkadiy-abakshin.png");
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.contacts {
+  margin-bottom: 0;
+}
+
+.contacts__list {
+  list-style: none;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.contacts__list-item {
+  margin-bottom: 12px;
+  padding-left: 65px;
+  font-size: 24px;  
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.contacts__list-item span {
+  display: block;
+}
+
+.contacts__list-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contacts__list-item--location {
+  margin-bottom: 40px;
+  background: url("../img/location.svg") top 10px left no-repeat;
+}
+
+.contacts__list-item--phone {  
+  background: url("../img/phone-call.svg") top left no-repeat;
+}
+
+.contacts__list-item--email {  
+  background: url("../img/email.svg") top left no-repeat;
+}
+
+.social-links {
+  display: flex;
+  height: 50px;  
+}
+
+.social-links__item {
+  display: inline-block;
+  width: 50px;
+  margin-right: 26px;  
+  background: url("../img/social-vk.svg") no-repeat;
+}
+
+.social-links__item--tg {
+  background: url("../img/social-telegram.svg") no-repeat;
+}
+
+.social-links__item--pi {
+  background: url("../img/social-pinterest.svg") no-repeat;
+}
+
+.social-links__item--st {
+  background: url("../img/social-stumbleupon.svg") no-repeat;
 }
