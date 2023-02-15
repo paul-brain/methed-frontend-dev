@@ -30,11 +30,21 @@ section > h2 {
 }
 
 .header {
+  position: relative;
   height: 823px;
-  margin-bottom: 100px;
+  margin-bottom: 100px;  
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/man-with-vr.png");
   background-position: bottom right;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .header__title {
