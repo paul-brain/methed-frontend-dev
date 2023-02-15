@@ -1,7 +1,12 @@
+.faq__title {
+    margin-bottom: 50px;
+}
+
 .faq__list {
     list-style: none;
     padding: 0;
 }
+
 .faq__list-item {
     position: relative;
     margin-bottom: 20px;
