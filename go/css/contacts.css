@@ -1,0 +1,35 @@
+.contacts__title {
+  margin-bottom: 50px;
+}
+
+.contacts__list {
+  list-style: none;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.contacts__list-item {
+  margin-bottom: 12px;
+  padding-left: 65px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.contacts__list-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contacts__list-item--location {
+  margin-bottom: 40px;
+  background: url("../img/location.svg") top 10px left no-repeat;
+}
+
+.contacts__list-item--phone {
+  background: url("../img/phone-call.svg") top left no-repeat;
+}
+
+.contacts__list-item--email {
+  background: url("../img/email.svg") top left no-repeat;
+}

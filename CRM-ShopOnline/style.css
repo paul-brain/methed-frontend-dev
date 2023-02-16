@@ -1,21 +1,4 @@
 @font-face {
-  font-family: "Droid Serif";  
-  src: local("Droid Serif"), local("Droid-Serif"), local("Droid-Serif-Regular"),
-    url("fonts/DroidSerif.woff2") format("woff2"),
-    url("fonts/DroidSerif.woff") format("woff");
-  font-weight: normal;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: "Droid Serif", Cambria, Cochin, Georgia, Times, serif;  
-  src: local("Droid Serif Bold"), local("Droid-Serif-Bold"),
-    url("fonts/DroidSerif-Bold.woff2") format("woff2"),
-    url("fonts/DroidSerif-Bold.woff") format("woff");
-  font-weight: bold;  
-}
-
-@font-face {
   font-family: "Lato";
   src: local("Lato Regular"), local("Lato-Regular"),
     url("fonts/lato-regular.woff2") format("woff2"),
@@ -52,7 +35,7 @@ body {
   line-height: 65px;
 }
 
-.blog-article__strong {  
+.blog-article__strong {
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 22px;

@@ -1,0 +1,33 @@
+.halls__title {
+  margin-bottom: 60px;
+}
+
+.halls__list {
+  list-style: none;
+}
+
+.halls__list-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.halls__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.halls__list-item img {
+  max-width: 100%;
+}
+
+.halls__list-item p {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 125px);
+  width: 250px;
+  margin: 0;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}

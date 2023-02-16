@@ -1,0 +1,16 @@
+.page__title {
+  margin: 0;
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: -15px;
+}
+
+.page__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 400;
+  padding-left: 100px;
+}
