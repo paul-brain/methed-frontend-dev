@@ -10,7 +10,7 @@
   margin-bottom: 28px;
 }
 
-.about blockquote {
+.about__blockquote {
   position: relative;
   height: 230px;
   margin: 0;
@@ -21,12 +21,12 @@
   text-transform: uppercase;
 }
 
-.about blockquote p {
+.about__blockquote p {
   margin-bottom: 40px;
 }
 
-.about blockquote:before,
-.about blockquote:after {
+.about__blockquote:before,
+.about__blockquote:after {
   content: "";
   position: absolute;
   top: 0;
@@ -36,14 +36,14 @@
   background: url("../img/quote.svg") no-repeat;
 }
 
-.about blockquote:after {
+.about__blockquote:after {
   top: 57px;
   left: auto;
   right: 100px;
   transform: rotate(180deg);
 }
 
-.about blockquote cite {
+.about__cite {
   position: absolute;
   bottom: 0;
   right: 0;

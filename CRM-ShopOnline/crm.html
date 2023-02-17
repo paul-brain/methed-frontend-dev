@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Добавить товар</title>
+</head>
+<body class="page-crm">
+  <div class="modal">
+    <h3 class="modal__title">Добавить товар</h3>
+
+    <form class="add-product" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <fieldset class="add-product__main">
+        <label class="add-product__label" for="name">Наименование</label>
+        <input class="add-product__field-text" type="text" name="name" id="name">
+
+        <label class="add-product__label" for="category">Категория</label>
+        <input class="add-product__field-text" type="text" name="category" id="category">
+
+        <label class="add-product__label" for="units">Единицы измерения</label>
+        <input class="add-product__field-text" type="text" name="units" id="units">
+
+        <label class="add-product__label" for="discont">Дисконт</label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="discont" id="discont">
+          <input class="add-product__field-text" type="text" name="discont_text" disabled>
+        </label>
+
+        <label class="add-product__label" for="description">Описание</label>
+        <textarea class="add-product__description" name="description" cols="20" rows="2" id="description"></textarea>
+
+        <label class="add-product__label" for="count">Количество</label>
+        <input class="add-product__field-text" type="text" name="count" id="count">
+
+        <label class="add-product__label" for="price">Цена</label>
+        <input class="add-product__field-text" type="text" name="price" id="price">
+        <!-- <input type="file" name="image"> -->
+        <!-- <input type="hidden" name="id" value="101"> -->
+      </fieldset>
+      <div class="btn-wrapper">
+        <button class="add-product__btn" type="submit">Добавить товар</button>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>

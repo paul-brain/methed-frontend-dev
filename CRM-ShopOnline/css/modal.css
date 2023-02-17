@@ -1,0 +1,155 @@
+.modal {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 792px;
+  margin: 0 auto;
+  padding: 32px 106px 28px;
+
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #6E6893;
+
+  background: #F2F0F9;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+.modal__title{
+  margin: 0 0 43px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  letter-spacing: 0.1em;
+}
+
+.modal:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/cross.svg") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.add-product__main {
+  margin-bottom: 32px;
+  padding: 28px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 8px;
+}
+
+.add-product__label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.add-product__field-text,
+.add-product__description {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 12px;
+  padding: 0;
+
+  background: #F4F2FF;
+  border: none;
+  border-radius: 6px;
+}
+
+.add-product__field-text:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.checkbox__input {
+  position: absolute;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox__input:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #F4F2FF;
+}
+
+.checkbox__input:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/checked.svg") no-repeat;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.checkbox__input:checked:after {
+  opacity: 1;
+}
+
+.checkbox__input + .add-product__field-text {
+  /* outline: 1px dotted red; */
+  margin-left: 50px;
+  width: calc(100% - 50px);
+  background-color: #EEEEEE;
+}
+
+.checkbox__input:checked + .add-product__field-text {
+  background-color: #F4F2FF;
+}
+
+.add-product__description {
+  min-height: 112px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 28px;
+}
+
+.add-product__btn {
+  padding: 10px 25px;
+  background: #6D5BD0;
+  border: none;
+  border-radius: 6px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
