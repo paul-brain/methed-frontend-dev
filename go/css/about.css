@@ -1,20 +1,38 @@
+.container--about {
+  letter-spacing: -6px;
+}
+
 .about__title {
   margin-bottom: 50px;
+  letter-spacing: normal;
+}
+
+.about__photos {
+  display: inline-block;
+  width: 600px;
+  margin-right: 80px;
 }
 
 .about__text {
-  margin-bottom: 70px;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  letter-spacing: normal;
 }
 
 .about p {
   margin-bottom: 28px;
 }
 
+.about p:last-of-type {
+  margin-bottom: 70px;
+}
+
 .about__blockquote {
   position: relative;
-  height: 230px;
+  height: 312px;
   margin: 0;
-  padding-left: 55px;
+  padding-left: 30px;
   font-size: 44px;
   line-height: 50px;
   font-weight: 400;
@@ -37,9 +55,9 @@
 }
 
 .about__blockquote:after {
-  top: 57px;
+  top: 157px;
   left: auto;
-  right: 100px;
+  right: 110px;
   transform: rotate(180deg);
 }
 
