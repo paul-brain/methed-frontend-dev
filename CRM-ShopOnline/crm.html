@@ -11,42 +11,35 @@
   <title>Добавить товар</title>
 </head>
 <body class="page-crm">
-  <div class="modal">
-    <h3 class="modal__title">Добавить товар</h3>
-
-    <form class="add-product" action="https://jsonplaceholder.typicode.com/posts" method="post">
-      <fieldset class="add-product__main">
-        <label class="add-product__label" for="name">Наименование</label>
-        <input class="add-product__field-text" type="text" name="name" id="name">
-
-        <label class="add-product__label" for="category">Категория</label>
-        <input class="add-product__field-text" type="text" name="category" id="category">
-
-        <label class="add-product__label" for="units">Единицы измерения</label>
-        <input class="add-product__field-text" type="text" name="units" id="units">
-
-        <label class="add-product__label" for="discont">Дисконт</label>
-        <label class="checkbox">
-          <input class="checkbox__input" type="checkbox" name="discont" id="discont">
-          <input class="add-product__field-text" type="text" name="discont_text" disabled>
-        </label>
-
-        <label class="add-product__label" for="description">Описание</label>
-        <textarea class="add-product__description" name="description" cols="20" rows="2" id="description"></textarea>
-
-        <label class="add-product__label" for="count">Количество</label>
-        <input class="add-product__field-text" type="text" name="count" id="count">
-
-        <label class="add-product__label" for="price">Цена</label>
-        <input class="add-product__field-text" type="text" name="price" id="price">
-        <!-- <input type="file" name="image"> -->
-        <!-- <input type="hidden" name="id" value="101"> -->
-      </fieldset>
-      <div class="btn-wrapper">
+  <div class="container">
+    <div class="modal">
+      <h3 class="modal__title">Добавить товар</h3>
+      <button class="modal__btn-close"></button>
+      <form class="add-product" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <fieldset class="add-product__main">
+          <label class="add-product__label" for="name">Наименование</label>
+          <input class="add-product__field-text" type="text" name="name" id="name">
+          <label class="add-product__label" for="category">Категория</label>
+          <input class="add-product__field-text" type="text" name="category" id="category">
+          <label class="add-product__label" for="units">Единицы измерения</label>
+          <input class="add-product__field-text" type="text" name="units" id="units">
+          <label class="add-product__label" for="discont">Дисконт</label>
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="discont">
+          </label>
+          <input class="add-product__field-text" type="text" name="discont_text" id="discont" disabled>
+          <label class="add-product__label" for="description">Описание</label>
+          <textarea class="add-product__description" name="description" cols="20" rows="2" id="description"></textarea>
+          <label class="add-product__label" for="count">Количество</label>
+          <input class="add-product__field-text" type="text" name="count" id="count">
+          <label class="add-product__label" for="price">Цена</label>
+          <input class="add-product__field-text" type="text" name="price" id="price">
+          <!-- <input type="file" name="image"> -->
+          <!-- <input type="hidden" name="id" value="101"> -->
+        </fieldset>
         <button class="add-product__btn" type="submit">Добавить товар</button>
-      </div>
-    </form>
-
+      </form>
+    </div>
   </div>
 </body>
 </html>

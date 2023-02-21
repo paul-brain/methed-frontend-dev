@@ -1,7 +1,14 @@
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal {
   position: relative;
   box-sizing: border-box;
-  max-width: 792px;
+  width: 792px;
   margin: 0 auto;
   padding: 32px 106px 28px;
 
@@ -30,8 +37,7 @@
   letter-spacing: 0.1em;
 }
 
-.modal:after {
-  content: "";
+.modal__btn-close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -40,6 +46,11 @@
   background: url("../img/cross.svg") no-repeat;
   background-size: contain;
   cursor: pointer;
+  border: none;
+}
+
+.add-product {
+  text-align: right;
 }
 
 .add-product__main {
@@ -49,6 +60,7 @@
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 8px;
+  text-align: left;
 }
 
 .add-product__label {
@@ -76,9 +88,12 @@
 
 .checkbox {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
   height: 40px;
   margin-bottom: 12px;
+  margin-right: 6px;
 }
 
 .checkbox__input {
@@ -118,9 +133,11 @@
   opacity: 1;
 }
 
-.checkbox__input + .add-product__field-text {
+.checkbox + .add-product__field-text {
   /* outline: 1px dotted red; */
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  display: inline-block;
+  vertical-align: top;
   width: calc(100% - 50px);
   background-color: #EEEEEE;
 }
@@ -133,14 +150,9 @@
   min-height: 112px;
 }
 
-.btn-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 28px;
-}
-
 .add-product__btn {
   padding: 10px 25px;
+  margin-right: 28px;
   background: #6D5BD0;
   border: none;
   border-radius: 6px;
