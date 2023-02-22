@@ -1,0 +1,43 @@
+.container--testimonials {
+  padding: 0 230px;
+  letter-spacing: -6px;
+}
+
+.testimonials__title {
+  margin-bottom: 40px;
+  letter-spacing: normal;
+}
+
+.response {
+  margin-bottom: 50px;
+}
+
+.response:last-child {
+  margin-bottom: 0;
+}
+
+.response__photo,
+.response__text {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+}
+
+.response__photo {
+  width: 280px;
+  height: 100%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.response__img {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 11px;
+  border-radius: 50%;
+}
+
+.response__text {
+  width: 680px;
+  padding-top: 50px;
+}

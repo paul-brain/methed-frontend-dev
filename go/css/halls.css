@@ -4,30 +4,48 @@
 
 .halls__list {
   list-style: none;
+  letter-spacing: -6px;
 }
 
 .halls__list-item {
-  position: relative;
-  margin-bottom: 60px;
-}
+  display: inline-block;
+  vertical-align: top;
+  width: 580px;
+  height: 349px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
-.halls__list-item:last-child {
-  margin-bottom: 0;
-}
-
-.halls__list-item img {
-  max-width: 100%;
-}
-
-.halls__list-item p {
-  position: absolute;
-  top: calc(50% - 80px);
-  left: calc(50% - 125px);
-  width: 250px;
-  margin: 0;
   font-size: 70px;
-  line-height: 80px;
+  line-height: 349px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: normal;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.halls__list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.halls__list-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+.halls__list-item:first-child {
+  background-image: url("../img/our-halls-80s-vibes.jpg");
+}
+
+.halls__list-item:nth-child(2) {
+  background-image: url("../img/our-halls-star-wars.jpg");
+}
+
+.halls__list-item:nth-child(3) {
+  background-image: url("../img/our-halls-wild-west.jpg");
+}
+
+.halls__list-item:last-child {
+  background-image: url("../img/our-halls-neon-style.jpg");
 }

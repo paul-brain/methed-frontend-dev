@@ -1,36 +1,18 @@
-.container--about {
-  letter-spacing: -6px;
-}
-
 .about__title {
   margin-bottom: 50px;
-  letter-spacing: normal;
-}
-
-.about__photos {
-  display: inline-block;
-  width: 600px;
-  margin-right: 80px;
 }
 
 .about__text {
-  display: inline-block;
-  vertical-align: top;
-  width: 500px;
-  letter-spacing: normal;
+  padding-left: 680px;
+  background: url("../img/about-us-photos.jpg") no-repeat;
 }
 
 .about p {
   margin-bottom: 28px;
 }
 
-.about p:last-of-type {
-  margin-bottom: 70px;
-}
-
 .about__blockquote {
   position: relative;
-  height: 312px;
   margin: 0;
   padding-left: 30px;
   font-size: 44px;
@@ -62,16 +44,13 @@
 }
 
 .about__cite {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 380px;
-  height: 85px;
-  padding-left: 110px;
+  display: block;
+  padding-left: 200px;
 
   background-image: url("../img/about-us-arkadiy-abakshin.png");
   background-size: 80px 80px;
   background-repeat: no-repeat;
+  background-position: 90px 2px;
 
   font-size: 20px;
   font-style: normal;
