@@ -26,8 +26,8 @@
   margin-bottom: 50px;
 }
 
-.article__paragraph--margin-right {
-  margin-right: 590px;
+.article__paragraph--limited-width {
+  width: 480px;
 }
 
 .article__section {
