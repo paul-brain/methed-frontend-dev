@@ -13,4 +13,52 @@
   line-height: 50px;
   font-weight: 400;
   padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.page__info {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 150px;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.page__text-themes {
+  width: 193px;
+}
+
+.page__text-4 {
+  display: block;
+  font-size: 100px;
+  line-height: 141px;
+  font-weight: 900;
+  color: #CD06FF;
+}
+
+
+.page__text-equipment {
+  width: 166px;
+}
+
+.page__text-new{
+  display: block;
+  font-size: 75px;
+  line-height: 106px;
+  font-weight: 900;
+  font-variant: small-caps;
+  color: #CD06FF;
+}
+
+.page__button {
+  padding: 25px 69px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6C0287;
+  border-radius: 10px;
 }

@@ -1,0 +1,245 @@
+.form {
+
+}
+
+.form__fieldset {
+  padding: 0;
+  margin-bottom: 60px;
+  border: none;
+}
+
+.form__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.form__legend {
+  margin-bottom: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.form__legend--center {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form__fieldset--halls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__label {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.form__small-text {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.form__label--hall {
+  display: block;
+  padding: 7px 15px;
+  width: 250px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form__radio--hall {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__label--radiocheck {
+  position: relative;
+  display: block;
+  margin-bottom: 22px;
+  padding-left: 37px;
+}
+
+.form__label--radiocheck:last-child {
+  margin-bottom: 0;
+}
+
+.form__radiocheck {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: -37px;
+}
+
+.form__radiocheck:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form__radiocheck:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 16px;
+  height: 8px;
+  border: 3px solid black;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.form__radiocheck:focus-visible {
+  outline: none
+}
+
+.form__radiocheck:checked:after {
+  opacity: 1
+}
+
+.form__radiocheck:focus:before {
+  box-shadow: 0px 0px 10px rgba(113, 0, 227, 0.5);
+}
+
+.form__radiocheck:hover:not(:disabled):before {
+  box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
+}
+
+.form__radiocheck:disabled:before {
+  background-color: #cccccc;
+}
+
+.form__radiocheck--circle:before {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.form__radiocheck--circle:after {
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.form__fieldset--game-set {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 0;
+}
+
+.form__fieldset--datetime {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 40px;
+}
+
+.form__fieldset--select {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  gap: 43px 32px;
+  width: 300px;
+  padding-top: 25px;
+  margin-bottom: 0;
+}
+
+.form__fieldset--name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px ;
+  margin-bottom: 0;
+  width: 280px;
+}
+
+.form__fieldset--contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px ;
+  margin-bottom: 0;
+  width: 300px;
+  padding: 0;
+}
+
+.form__label--select {
+  flex: 1 1 100px;
+  position: relative;
+  display: block;
+  height: 52px;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #211E1E;
+  cursor: pointer;
+}
+
+.form__text {
+  width: 100%;
+  height: 52px;
+}
+
+.form__text--select {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__label--select:after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  display: block;
+  width: 21px;
+  height: 15px;
+  background: url("../img/datetime-arrow.svg") no-repeat;
+}
+
+.form__fieldset--btn {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 100px;
+}
+
+.form__btn {
+  width: 300px;
+  height: 60px;
+  padding: 16px 50px;
+
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #6C0287;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 10px;
+}

@@ -1,5 +1,18 @@
+.contacts {
+  padding-bottom: 10px;
+}
+
 .contacts__title {
   margin-bottom: 50px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 274px;
+  margin-bottom: 155px;
 }
 
 .contacts__list {

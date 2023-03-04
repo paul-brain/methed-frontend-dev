@@ -1,5 +1,9 @@
+.halls {
+  margin-bottom: 50px;
+}
+
 .halls__title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .halls__list {

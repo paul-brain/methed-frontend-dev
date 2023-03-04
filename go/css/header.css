@@ -1,11 +1,66 @@
 .header {
-  height: 1020px;
-  padding-top: 146px;
+  padding-top: 30px;
 }
 
 .header__container {
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 150px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header__logo-link {
+  display: block;
+  width: 120px;
+  height: 66px;
+  margin-right: 76px;
+}
+
+.header__nav-list {
+  display: flex;
+  height: 50px;
+  margin-right: auto;
+}
+
+.header__nav-link {
+  display: block;
+  padding: 0 20px;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding: 12px 32px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid #CD06FF;
+  border-radius: 10px;
+}
+
+.header__container:before {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  right: 674px;
+  width: 97px;
+  height: 97px;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .header__container:after {
@@ -13,7 +68,7 @@
   position: absolute;
   bottom: 0;
   right: 130px;
-  width: 100%;
+  width: 675px;
   height: 100%;
   background-image: url("../img/man-with-vr.png");
   background-position: bottom right;

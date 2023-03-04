@@ -1,0 +1,26 @@
+.services__title {
+  padding: 0 200px;
+  margin-bottom: 40px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.services__item {
+  flex-basis: 380px;
+}
+
+.services__figure {
+  position: relative;
+}
+
+.services__name {
+  position: absolute;
+  top: 166px;
+  left: 40px;
+  width: 300px;
+  font-weight: 700;
+}

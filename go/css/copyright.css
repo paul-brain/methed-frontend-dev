@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyright__design {
+  width: 160px;
+}
