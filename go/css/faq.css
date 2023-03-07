@@ -29,18 +29,35 @@
 }
 
 .faq__list-item:before {
-    content: "";    
+    content: "";
     width: 46px;
-    height: 46px;    
+    height: 46px;
     position: absolute;
     top: 20px;
     right: 70px;
+    cursor: pointer;
 }
 
 .faq__list-item:nth-child(odd):before {
-    background: url("../img/open-purple.svg") no-repeat;    
+  background: url("../img/open-purple.svg") no-repeat;
+}
+
+.faq__list-item:nth-child(odd):hover:before {
+  background: url("../img/open-purple-hover.svg") no-repeat;
+}
+
+.faq__list-item:nth-child(odd):active:before {
+  background: url("../img/open-purple-active.svg") no-repeat;
 }
 
 .faq__list-item:nth-child(even):before {
-    background: url("../img/open.svg") no-repeat;    
+    background: url("../img/open-white.svg") no-repeat;
+}
+
+.faq__list-item:nth-child(even):hover:before {
+  background: url("../img/open-white-hover.svg") no-repeat;
+}
+
+.faq__list-item:nth-child(even):active:before {
+  background: url("../img/open-white-active.svg") no-repeat;
 }

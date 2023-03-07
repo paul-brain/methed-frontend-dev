@@ -52,8 +52,25 @@
   text-transform: uppercase;
   color: #000000;
   background-color: #fff;
+  border: 3px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.form__label--hall:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.form__label--hall:active {
+  color: #ffffff;
+  background-color: #6C0287;
+  border: 3px solid #ffffff;
+}
+
+.form__label--hall:focus {
+  background-color: #ffffff;
+  border: 3px solid #640AA3;
 }
 
 .form__radio--hall {
@@ -91,6 +108,10 @@
   height: 25px;
   background-color: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form__radiocheck:focus:before {
+  border: 1px solid #CD06FF;
 }
 
 .form__radiocheck:after {
@@ -205,6 +226,11 @@
   height: 52px;
 }
 
+.form__text:focus {
+  border: 2px solid #CD06FF;
+  outline: none;
+}
+
 .form__text--select {
   display: none;
   -webkit-appearance: none;
@@ -242,4 +268,19 @@
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.form__btn:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.form__btn:active {
+  background-color: #EADEED;
+  border: 3px solid #EADEED;
+}
+
+.form__btn:focus {
+  background-color: #FFFFFF;
+  border: 3px solid #6C0287;
 }

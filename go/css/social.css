@@ -16,3 +16,16 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.social__link:hover {
+  color: #EADEED;
+}
+
+.social__link:active {
+  color: #CD06FF;
+}
+
+.social__link:focus {
+  color: #EADEED;
+  outline: none;
+}
