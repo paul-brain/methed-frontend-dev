@@ -136,14 +136,6 @@
   opacity: 1
 }
 
-.form__radiocheck:focus:before {
-  box-shadow: 0px 0px 10px rgba(113, 0, 227, 0.5);
-}
-
-.form__radiocheck:hover:not(:disabled):before {
-  box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
-}
-
 .form__radiocheck:disabled:before {
   background-color: #cccccc;
 }
@@ -155,13 +147,29 @@
 }
 
 .form__radiocheck--circle:after {
-  width: 16px;
-  height: 16px;
-  top: 5px;
-  left: 5px;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
   border: none;
-  border-radius: 50%;
-  background-color: #000000;
+  transform: none;
+  opacity: 1;
+}
+
+.form__radiocheck--circle:checked:after {
+  content: '●';
+  font-size: 34px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.form__radiocheck--circle:focus:before {
+  border: none;
+}
+
+.form__radiocheck--circle:focus:after {
+  outline: 1px solid #CD06FF;
 }
 
 .form__fieldset--game-set {
