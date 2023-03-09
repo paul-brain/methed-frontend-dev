@@ -276,6 +276,10 @@
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 10px;
+
+  transition:
+    background-color 200ms ease-in,
+    border 100ms ease-out;
 }
 
 .form__btn:hover {

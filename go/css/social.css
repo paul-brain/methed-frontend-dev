@@ -13,8 +13,12 @@
 }
 
 .social__link {
+  display: block;
+  height: 50px;
   color: #FFFFFF;
   text-decoration: none;
+
+  transition: color 400ms ease-out;
 }
 
 .social__link:hover {
@@ -27,5 +31,5 @@
 
 .social__link:focus {
   color: #EADEED;
-  outline: none;
+  outline: 1px solid #CD06FF;
 }

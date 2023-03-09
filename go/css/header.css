@@ -49,6 +49,10 @@
   background-color: transparent;
   border: 3px solid #CD06FF;
   border-radius: 10px;
+
+  transition:
+    background-color 200ms linear,
+    border 100ms ease-out;
 }
 
 .header__btn:hover {
@@ -80,6 +84,10 @@
   cursor: pointer;
   border: none;
   outline: none;
+
+  transition:
+    background-image 300ms ease-in,
+    border 200ms ease-out;
 }
 
 .header__scroll:hover {

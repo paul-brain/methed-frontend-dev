@@ -36,6 +36,9 @@
     top: 20px;
     right: 70px;
     cursor: pointer;
+
+    transition:
+      background 200ms linear;
 }
 
 .faq__list-item:nth-child(odd):before {
@@ -51,7 +54,7 @@
 }
 
 .faq__list-item:nth-child(even):before {
-    background: url("../img/open-white.svg") no-repeat;
+  background: url("../img/open-white.svg") no-repeat;
 }
 
 .faq__list-item:nth-child(even):hover:before {
