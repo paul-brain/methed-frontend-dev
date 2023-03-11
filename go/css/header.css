@@ -47,7 +47,7 @@
   text-transform: uppercase;
   color: #fff;
   background-color: transparent;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--main-light);
   border-radius: 10px;
 
   transition:
@@ -56,17 +56,17 @@
 }
 
 .header__btn:hover {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--main-dark);
+  border: 3px solid var(--main-dark);
 }
 
 .header__btn:active {
-  background-color: #640AA3;
+  background-color: var(--main-dop);
   border: 1px solid #000000;
 }
 
 .header__btn:focus {
-  background-color: #6C0287;
+  background-color: var(--main-dark);
 }
 
 .header__scroll {
@@ -99,7 +99,7 @@
 }
 
 .header__scroll:focus {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--main-light);
 }
 
 /*

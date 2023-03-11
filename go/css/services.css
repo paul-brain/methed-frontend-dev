@@ -1,3 +1,7 @@
+.services {
+  padding-bottom: 120px;
+}
+
 .services__title {
   width: 780px;
   margin: 0 auto 40px;
@@ -17,6 +21,11 @@
 
 .services__item:hover {
   transform: scale(1.1);
+}
+
+.services__item:nth-child(3n-1) {
+  transform: translateY(70px);
+
 }
 
 .services__figure {

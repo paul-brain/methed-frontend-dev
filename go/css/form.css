@@ -1,7 +1,3 @@
-.form {
-
-}
-
 .form__fieldset {
   padding: 0;
   margin-bottom: 60px;
@@ -55,22 +51,27 @@
   border: 3px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+
+  transition:
+    color 300ms ease-in,
+    background-color 300ms ease-in,
+    border 200ms ease-out;
 }
 
 .form__label--hall:hover {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
+  background-color: var(--btn-form);
+  border: 3px solid var(--main-dop);
 }
 
 .form__label--hall:active {
   color: #ffffff;
-  background-color: #6C0287;
+  background-color: var(--main-dark);
   border: 3px solid #ffffff;
 }
 
 .form__label--hall:focus {
   background-color: #ffffff;
-  border: 3px solid #640AA3;
+  border: 3px solid var(--main-dop);
 }
 
 .form__radio--hall {
@@ -111,7 +112,7 @@
 }
 
 .form__radiocheck:focus:before {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--main-light);
 }
 
 .form__radiocheck:after {
@@ -169,7 +170,7 @@
 }
 
 .form__radiocheck--circle:focus:after {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-light);
 }
 
 .form__fieldset--game-set {
@@ -235,7 +236,7 @@
 }
 
 .form__text:focus {
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--main-light);
   outline: none;
 }
 
@@ -272,7 +273,7 @@
   line-height: 28px;
   font-weight: 700;
   background-color: #fff;
-  color: #6C0287;
+  color: var(--main-dark);
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 10px;
@@ -283,16 +284,16 @@
 }
 
 .form__btn:hover {
-  background-color: #EADEED;
-  border: 3px solid #6C0287;
+  background-color: var(--btn-form);
+  border: 3px solid var(--main-dark);
 }
 
 .form__btn:active {
-  background-color: #EADEED;
-  border: 3px solid #EADEED;
+  background-color: var(--btn-form);
+  border: 3px solid var(--btn-form);
 }
 
 .form__btn:focus {
   background-color: #FFFFFF;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--main-dark);
 }

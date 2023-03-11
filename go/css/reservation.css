@@ -1,7 +1,7 @@
 .reservation {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #440F51;
+  background-color: var(--bg);
 }
 
 .reservation__title {

@@ -1,5 +1,6 @@
 @import url(normalize.css);
 @import url(global.css);
+@import url(var.css);
 @import url(page.css);
 @import url(header.css);
 @import url(services.css);

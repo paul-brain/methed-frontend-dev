@@ -35,7 +35,7 @@
   font-size: 100px;
   line-height: 141px;
   font-weight: 900;
-  color: #CD06FF;
+  color: var(--main-light);
 }
 
 
@@ -49,7 +49,7 @@
   line-height: 106px;
   font-weight: 900;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--main-light);
 }
 
 .page__button {
@@ -59,7 +59,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  background-color: #6C0287;
+  background-color: var(--main-dark);
   border: none;
   border-radius: 10px;
 
@@ -67,15 +67,14 @@
 }
 
 .page__button:hover {
-  background-color: #840AA3;
+  background-color: var(--btn-action);
 }
 
 .page__button:active {
-  /* background-color: #640AA3; */
-  background-color: #8f4747;
+  background-color: var(--main-dop);
 }
 
 .page__button:focus {
-  background-color: #840AA3;
+  background-color: var(--btn-action);
   outline: none;
 }

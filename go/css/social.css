@@ -26,10 +26,10 @@
 }
 
 .social__link:active {
-  color: #CD06FF;
+  color: var(--main-light);
 }
 
 .social__link:focus {
   color: #EADEED;
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-light);
 }
