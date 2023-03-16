@@ -1,0 +1,135 @@
+.footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  color: #fff;
+  background-color: #2F324B;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-link {
+  display: block;
+  width: 68px;
+  height: 68px;
+  margin-right: 20px;
+}
+
+.footer__copyright {
+  width: 127px;
+
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.footer__who-made {
+  margin: auto;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.footer__call-me {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 3px;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.footer__phone-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__call-me-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding-top: 37px;
+    padding-bottom: 49px;
+  }
+
+  .footer__logo-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__who-made {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer__phone {
+    margin-bottom: 4px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .footer__phone-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .footer__logo-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__copyright {
+    width: 87px;
+    margin-right: auto;
+
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .footer__who-made {
+    width: calc(100% + 30px);
+    height: 47px;
+    margin: 0 -15px;
+    order: 1;
+    line-height: 47px;
+    text-align: center;
+    background-color: #2A2C3F;
+  }
+
+  .footer__phone,
+  .footer__phone-text {
+    display: none;
+  }
+
+  .footer__call-me-btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: #555A7B url("../img/call-me.svg") center no-repeat;
+    border-radius: 50%;
+  }
+}

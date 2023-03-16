@@ -1,0 +1,178 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  background: linear-gradient(rgba(47, 50, 75, 0.85), rgba(47, 50, 75, 0.85)),
+    url("../img/stag-office-mockup.jpg") top left / cover no-repeat;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  margin-bottom: 120px;
+}
+
+.header__logo-link {
+  display: block;
+  width: 68px;
+  height: 68px;
+}
+
+.header__call-me {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header__phone {
+  display: block;
+  margin-bottom: 3px;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__phone-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__call-me-btn {
+  display: none;
+}
+
+.header__title {
+  margin-bottom: 35px;
+}
+
+.header__description {
+  max-width: 960px;
+  margin-bottom: 90px;
+
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.header__btn {
+  padding: 12px 48px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #15A9CB;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+
+  transition: background-color 200ms linear;
+}
+
+.header__btn:hover {
+  background-color: #189ab8;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 70px;
+  }
+
+  .header__nav {
+    margin-bottom: 70px;
+  }
+
+  .header__logo-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header__phone {
+    margin-bottom: 4px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .header__phone-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .header__title {
+    max-width: 780px;
+    margin-bottom: 28px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .header__description {
+    max-width: 780px;
+    margin-bottom: 60px;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 65px;
+  }
+
+  .header__nav {
+    margin-bottom: 65px;
+  }
+
+  .header__logo-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__phone,
+  .header__phone-text {
+    display: none;
+  }
+
+  .header__call-me-btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: #555A7B url("../img/call-me.svg") center no-repeat;
+    border-radius: 50%;
+  }
+
+  .header__title {
+    max-width: 420px;
+    margin-bottom: 23px;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .header__description {
+    max-width: 420px;
+    margin-bottom: 54px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .header__btn {
+    padding: 9px 28px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
