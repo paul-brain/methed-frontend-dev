@@ -40,7 +40,7 @@
 
 .footer__phone {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 
   font-size: 24px;
   line-height: 28px;
@@ -68,12 +68,16 @@
     height: 60px;
   }
 
+  .footer__copyright {
+    padding-top: 1px;
+  }
+
   .footer__who-made {
     color: rgba(255, 255, 255, 0.5);
   }
 
   .footer__phone {
-    margin-bottom: 4px;
+    margin-bottom: 0;
 
     font-size: 21px;
     line-height: 25px;
@@ -104,6 +108,7 @@
   .footer__copyright {
     width: 87px;
     margin-right: auto;
+    padding-top: 0;
 
     font-size: 8px;
     line-height: 11px;

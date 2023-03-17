@@ -32,10 +32,9 @@
 
 .header__phone {
   display: block;
-  margin-bottom: 3px;
 
   font-size: 24px;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 .header__phone-text {
@@ -50,12 +49,12 @@
 }
 
 .header__title {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .header__description {
   max-width: 960px;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
 
   font-size: 22px;
   line-height: 31px;
@@ -66,7 +65,7 @@
 .header__btn {
   padding: 12px 48px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   font-weight: 500;
   color: #fff;
   background-color: #15A9CB;
@@ -83,8 +82,8 @@
 
 @media (max-width: 1200px) {
   .header {
-    padding-top: 25px;
-    padding-bottom: 70px;
+    padding-top: 26px;
+    padding-bottom: 71px;
   }
 
   .header__nav {
@@ -97,8 +96,6 @@
   }
 
   .header__phone {
-    margin-bottom: 4px;
-
     font-size: 21px;
     line-height: 25px;
   }
@@ -110,7 +107,7 @@
 
   .header__title {
     max-width: 780px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
 
     font-size: 40px;
     line-height: 47px;
@@ -118,21 +115,28 @@
 
   .header__description {
     max-width: 780px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
+    padding: 0 5px;
 
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .header__btn {
+    padding: 12px 49px;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 
 @media (max-width: 768px) {
   .header {
     padding-top: 15px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
   }
 
   .header__nav {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 
   .header__logo-link {
@@ -156,7 +160,7 @@
 
   .header__title {
     max-width: 420px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
 
     font-size: 20px;
     line-height: 23px;
@@ -165,13 +169,15 @@
   .header__description {
     max-width: 420px;
     margin-bottom: 54px;
+    max-height: 78px;
+    overflow: hidden;
 
     font-size: 14px;
     line-height: 20px;
   }
 
   .header__btn {
-    padding: 9px 28px;
+    padding: 9px 38px;
     font-size: 16px;
     line-height: 19px;
   }
