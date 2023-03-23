@@ -79,7 +79,23 @@
 }
 
 .navbar__btn--basket {
+  position: relative;
   background-image: url(../img/shopping-cart.svg);
+}
+
+.navbar__btn--basket:after {
+  position: absolute;
+  display: block;
+  content: "2";
+  top: -4px;
+  right: 13px;
+  width: 14px;
+  height: 18px;
+  color: #3670C7;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .navbar__btn--favourite {
