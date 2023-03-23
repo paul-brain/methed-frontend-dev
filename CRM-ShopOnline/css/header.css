@@ -94,6 +94,7 @@
   color: #3670C7;
   font-weight: 700;
   font-size: 14px;
+  line-height: 18px;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
@@ -219,5 +220,9 @@
     padding: 0;
     font-size: 0;
     background-size: 30px;
+  }
+
+  .navbar__btn--basket:after {
+    right: 1px;
   }
 }
