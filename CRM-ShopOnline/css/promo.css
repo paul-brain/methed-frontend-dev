@@ -316,7 +316,7 @@
 
   .promo__item--3 {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
   }
 
   .promo__item--4 {
