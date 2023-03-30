@@ -1,14 +1,13 @@
-.container--testimonials {
-  padding: 0 230px;
-  letter-spacing: -6px;
-}
-
 .testimonials__title {
   margin-bottom: 40px;
-  letter-spacing: normal;
+}
+
+.testimonials__list {
+  padding: 0 100px;
 }
 
 .response {
+  display: flex;
   margin-bottom: 50px;
 }
 
@@ -16,17 +15,9 @@
   margin-bottom: 0;
 }
 
-.response__photo,
-.response__text {
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-}
-
 .response__photo {
+  flex: 0 0 280px;
   position: relative;
-  width: 280px;
-  height: 100%;
   margin-right: 20px;
   text-align: center;
 }
@@ -50,6 +41,113 @@
 }
 
 .response__text {
-  width: 680px;
   padding-top: 50px;
+}
+
+@media (max-width: 1440px) {
+  .testimonials__title {
+    margin-bottom: 26px;
+  }
+
+  .response {
+    margin-bottom: 40px;
+  }
+
+  .response__photo {
+    flex: 0 0 172px;
+    margin-right: 38px;
+  }
+
+  .response__photo:after {
+    height: 172px;
+  }
+
+  .response__img {
+    width: 172px;
+    height: 172px;
+    margin-bottom: 21px;
+  }
+
+  .response__text {
+    padding-top: 33px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .testimonials__title {
+    margin-bottom: 31px;
+  }
+
+  .testimonials__list {
+    padding: 0 63px;
+  }
+
+  .response {
+    margin-bottom: 30px;
+  }
+
+  .response__photo {
+    flex: 0 0 153px;
+    margin-right: 15px;
+  }
+
+  .response__photo:after {
+    height: 153px;
+  }
+
+  .response__img {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 17px;
+  }
+
+  .response__name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .response__text {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials__title {
+    margin-bottom: 15px;
+  }
+
+  .testimonials__list {
+    padding: 0;
+  }
+
+  .response {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .response__photo {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .response__photo:after {
+    left: calc(50% - 43px);
+    width: 86px;
+    height: 86px;
+  }
+
+  .response__img {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 9px;
+  }
+
+  .response__text {
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

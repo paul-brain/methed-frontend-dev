@@ -18,6 +18,14 @@
   margin-bottom: 50px;
 }
 
+.header__nav--margin-60 {
+  margin-bottom: 60px;
+}
+
+.header__nav-btn {
+  display: none;
+}
+
 .header__logo-link {
   display: block;
   width: 120px;
@@ -37,6 +45,20 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
+
+  transition: color 200ms linear;
+}
+
+.header__nav-link:hover {
+  color: var(--main-light);
+}
+
+.header__nav-link:active {
+  color: var(--main-dark);
+}
+
+.header__nav-link:focus {
+  outline: 1px solid var(--main-light);
 }
 
 .header__btn {
@@ -102,20 +124,6 @@
   border: 1px solid var(--main-light);
 }
 
-/*
-.header__container:before {
-  content: "";
-  position: absolute;
-  bottom: 90px;
-  right: 674px;
-  width: 97px;
-  height: 97px;
-  background-image: url("../img/arrow-down.svg");
-  background-repeat: no-repeat;
-  z-index: 2;
-  cursor: pointer;
-} */
-
 .header__container:after {
   content: "";
   position: absolute;
@@ -126,5 +134,134 @@
   background-image: url("../img/man-with-vr.png");
   background-position: bottom right;
   background-repeat: no-repeat;
+  background-size: contain;
   z-index: 1;
+}
+
+@media (max-width: 1440px) {
+  .header__container {
+    padding-bottom: 60px;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .header__logo-link {
+    width: 87px;
+    height: 55px;
+    margin-right: 0;
+  }
+
+  .header__nav-list {
+    margin-right: 0;
+  }
+
+  .header__nav-link {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .header__btn {
+    padding: 10px 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header__scroll {
+    bottom: 46px;
+    right: 479px;
+    width: 67px;
+    height: 67px;
+  }
+
+  .header__container:after {
+    right: 60px;
+    width: 453px;
+    height: 82%;
+  }
+}
+
+@media (max-width: 1152px) {
+  .header {
+    padding-bottom: 40px;
+  }
+
+  .header__container {
+    padding-bottom: 84px;
+  }
+
+  .header__nav-btn {
+    display: block;
+    width: 54px;
+    height: 54px;
+    background: url(../img/menu.svg) left center no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+
+    transition:
+      background-image 150ms ease-in,
+      background-size 150ms ease-in;
+  }
+
+  .header__nav-btn:hover,
+  .header__nav-btn:active,
+  .header__nav-btn:focus {
+    background: url(../img/menu-close.svg) center no-repeat;
+    background-size: 36px;
+  }
+
+  .header__nav-btn:focus {
+    border: 1px solid var(--main-light);
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__scroll {
+    display: none;
+  }
+
+  .header__container:after {
+    right: 40px;
+    width: 409px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+
+  .header__container {
+    padding-bottom: 23px;
+  }
+
+  .header__nav {
+    margin-bottom: 20px;
+  }
+
+  .header__logo-link {
+    width: 66px;
+    height: 42px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__nav-btn {
+    width: 42px;
+    height: 42px;
+    background-size: contain;
+  }
+
+  .header__container:after {
+    right: 20px;
+    width: 50%;
+  }
 }

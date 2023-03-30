@@ -1,0 +1,208 @@
+.hall__intro {
+  padding: 50px 90px;
+
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.hall__inner {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.hall__has-title {
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hall__has-text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hall__has-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.halls__list--other {
+  flex-wrap: nowrap;
+}
+
+.halls__list-item--other {
+  flex: 1 1 380px;
+  height: 229px;
+  padding: 78px 120px;
+
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.halls--mb0 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+  .hall__has {
+    padding-bottom: 35px;
+  }
+
+  .hall__intro {
+    padding: 35px 42px;
+
+    font-size: 20px;
+  }
+
+  .hall__inner {
+    gap: 30px;
+  }
+
+  .hall__has-title {
+    margin-bottom: 36px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hall__preview {
+    width: 461px;
+  }
+
+  .hall__has-text {
+    font-size: 18px;
+  }
+
+  .halls {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .halls__list-item--other {
+    flex: 1 1 288px;
+    height: 172px;
+    padding: 50px 80px;
+  }
+
+  .contacts {
+    padding-top: 35px;
+    padding-bottom: 19px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .hall__has {
+    padding-bottom: 30px;
+  }
+
+  .hall__intro {
+    padding: 30px 0;
+
+    font-size: 16px;
+  }
+
+  .hall__inner {
+    gap: 46px;
+  }
+
+  .hall__has-title {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .hall__preview {
+    width: 329px;
+  }
+
+  .hall__has-text {
+    font-size: 16px;
+  }
+
+  .halls {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .halls__list-item--other {
+    flex: 1 1 224px;
+    height: 134px;
+    padding: 43px 60px;
+
+    font-size: 20px;
+  }
+
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hall__has {
+    padding-bottom: 15px;
+  }
+
+  .hall__intro {
+    padding: 15px 0;
+  }
+
+  .hall__inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hall__has-title {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hall__preview {
+    max-width: 280px;
+    height: auto;
+  }
+
+  .hall__has-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .halls {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .halls__list--other {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .halls__list-item--other {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    width: 280px;
+    height: 140px;
+    padding: 0 90px;
+
+    font-size: 20px;
+    line-height: 24px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contacts {
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+}

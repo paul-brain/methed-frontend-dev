@@ -33,3 +33,39 @@
   color: #EADEED;
   outline: 1px solid var(--main-light);
 }
+
+@media (max-width: 1440px) {
+  .social__list {
+    height: 40px;
+  }
+
+  .social__item {
+    width: 40px;
+  }
+
+  .social__link {
+    height: 40px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .social__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social__list {
+    height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .social__item {
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  .social__link {
+    height: 30px;
+  }
+}

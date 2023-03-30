@@ -1,5 +1,5 @@
 .about__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .about__text {
@@ -23,6 +23,7 @@
 
 .about__blockquote p {
   margin-bottom: 40px;
+  padding-right: 70px;
 }
 
 .about__blockquote:before,
@@ -57,4 +58,167 @@
   line-height: 28px;
   font-weight: 400;
   text-transform: none;
+}
+
+@media (max-width: 1440px) {
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .about__title {
+    margin-bottom: 26px;
+  }
+
+  .about__text {
+    padding-left: 460px;
+    background-size: 420px auto;
+  }
+
+  .about p {
+    margin-bottom: 26px;
+  }
+
+  .about__blockquote {
+    padding-left: 25px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__blockquote p {
+    margin-bottom: 13px;
+    padding-right: 40px;
+  }
+
+  .about__blockquote:before,
+  .about__blockquote:after {
+    width: 15px;
+    background-size: contain;
+  }
+
+  .about__blockquote:after {
+    top: 73px;
+    left: auto;
+    right: 173px;
+  }
+
+  .about__cite {
+    padding-left: 200px;
+    background-size: 70px 70px;
+    background-position: 95px 4px;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .about {
+    padding-bottom: 30px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__text {
+    padding: 66px 0 0;
+    background-size: 380px auto;
+  }
+
+  .about p {
+    padding-left: 408px;
+  }
+
+  .about p:last-of-type {
+    margin-bottom: 97px;
+  }
+
+  .about__blockquote {
+    padding-left: 22px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .about__blockquote p {
+    margin-bottom: 16px !important;
+    padding: 0;
+  }
+
+  .about__blockquote:before,
+  .about__blockquote:after {
+    width: 16px;
+    background-size: contain;
+  }
+
+  .about__blockquote:after {
+    top: 36px;
+    left: auto;
+    right: 124px;
+  }
+
+  .about__cite {
+    padding-left: 445px;
+    background-position: 348px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 15px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .about__text {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 16px;
+    background-size: contain;
+    background-position: 0 140px;
+  }
+
+  .about p {
+    padding: 0;
+  }
+
+  .about p:last-of-type {
+    margin-bottom: 116%;
+  }
+
+  .about__blockquote {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about__blockquote p {
+    width: 280px;
+    padding-left: 15px;
+    margin-bottom: 10px !important;
+  }
+
+  .about__blockquote:before,
+  .about__blockquote:after {
+    width: 11px;
+    background-size: contain;
+  }
+
+  .about__blockquote:after {
+    top: 45px;
+    left: 155px;
+    right: auto;
+  }
+
+  .about__cite {
+    width: 250px;
+    height: 56px;
+    padding-left: 67px;
+    background-size: 56px 56px;
+    background-position: 0 0;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
