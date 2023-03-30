@@ -568,6 +568,10 @@
     flex-grow: 1;
   }
 
+  .form__label--select:last-child {
+    width: 100%;
+  }
+
   .form__fieldset--name {
     width: 100%;
   }

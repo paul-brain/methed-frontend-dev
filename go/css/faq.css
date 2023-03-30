@@ -78,6 +78,14 @@
       line-height: 24px;
   }
 
+  .faq__list-item:last-child {
+    display: none;
+  }
+
+  .faq__list-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+
   .faq__list-item:nth-child(even) {
       color: #1C1A1A;
       background-color: #fff;
