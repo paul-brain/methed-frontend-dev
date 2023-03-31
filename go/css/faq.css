@@ -17,6 +17,7 @@
     line-height: 28px;
     font-weight: 700;
     color: #1C1A1A;
+    cursor: pointer;
 }
 
 .faq__list-item:last-child {

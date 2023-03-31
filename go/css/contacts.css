@@ -78,6 +78,10 @@
     background-position: 0 17px;
   }
 
+  .contacts__list-item--email {
+    background-position: 0 center;
+  }
+
   .map {
     max-width: 542px;
   }

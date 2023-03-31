@@ -217,7 +217,7 @@
   padding: 0;
 }
 
-.form__label--select {
+.form__select {
   flex: 1 1 100px;
   position: relative;
   display: block;
@@ -228,7 +228,32 @@
   background-color: #fff;
   color: #211E1E;
   cursor: pointer;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: #fff;
+  background-image: url("../img/datetime-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px top 19px;
+  background-size: 21px 15px;
 }
+
+.form__select:focus {
+  outline: none;
+}
+
+/* .form__label--select:after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  display: block;
+  width: 21px;
+  height: 15px;
+  background: url("../img/datetime-arrow.svg") no-repeat;
+} */
 
 .form__text {
   width: 100%;
@@ -241,23 +266,12 @@
   outline: none;
 }
 
-.form__text--select {
+/* .form__text--select {
   display: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.form__label--select:after {
-  content: '';
-  position: absolute;
-  top: 19px;
-  right: 18px;
-  display: block;
-  width: 21px;
-  height: 15px;
-  background: url("../img/datetime-arrow.svg") no-repeat;
-}
+} */
 
 .form__fieldset--btn {
   display: flex;
@@ -435,12 +449,12 @@
     width: 100%;
   }
 
-  .form__label--select {
+  .form__select {
     flex: none;
     width: 134px;
   }
 
-  .form__label--select:last-child {
+  .form__select:last-child {
     width: 300px;
     margin-left: auto;
   }
@@ -564,11 +578,11 @@
     padding-top: 10px;
   }
 
-  .form__label--select {
+  .form__select {
     flex-grow: 1;
   }
 
-  .form__label--select:last-child {
+  .form__select:last-child {
     width: 100%;
   }
 

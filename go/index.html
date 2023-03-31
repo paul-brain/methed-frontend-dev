@@ -85,7 +85,7 @@
         </ul>
       </div>
     </section>
-    <section class="halls">
+    <section class="halls" id="halls">
       <div class="container">
         <h2 class="halls__title">Наши залы</h2>
         <ul class="halls__list">
@@ -96,7 +96,7 @@
         </ul>
       </div>
     </section>
-    <section class="reservation">
+    <section class="reservation" id="reservation">
       <div class="container">
         <h2 class="reservation__title">Забронировать зал просто</h2>
         <form class="reservation__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
@@ -172,18 +172,39 @@
               <legend class="form__legend form__legend--center">Выбери дату и время</legend>
 
               <fieldset class="form__fieldset form__fieldset--select">
-                <label class="form__label form__label--select">
+                <!-- <label class="form__select" for="date_input">
                   Дата
-                  <input class="form__text form__text--select" type="date" name="date" required>
+                  <input class="form__text form__text--select" type="date" name="date" id="date_input" required>
                 </label>
-                <label class="form__label form__label--select">
+                <label class="form__select" for="time_input">
                   Время
-                  <input class="form__text form__text--select" type="time" name="time" required>
+                  <input class="form__text form__text--select" type="time" name="time" id="time_input" required>
                 </label>
                 <label class="form__label form__label--select">
                   Сколько человек
                   <input class="form__text form__text--select" type="text" name="count" required>
-                </label>
+                </label> -->
+                <select class="form__select" name="date">
+                  <option>Дата</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <select class="form__select" name="time">
+                  <option>Время</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <select class="form__select" name="count">
+                  <option>Сколько человек</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
               </fieldset>
 
               <fieldset class="form__fieldset form__fieldset--name">
@@ -217,10 +238,17 @@
             <!-- <input class="form__checkbox" type="checkbox" name="agree" id="agree" required> -->
             <!-- <label class="form__label" for="agree">Согласен на обработку данных</label> -->
           </fieldset>
+          <select class="select-css">
+            <option>This is a native select element</option>
+            <option>Apples</option>
+            <option>Bananas</option>
+            <option>Grapes</option>
+            <option>Oranges</option>
+          </select>
         </form>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title">О нас</h2>
         <div class="about__text">
@@ -233,7 +261,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="container container--testimonials">
         <h2 class="testimonials__title">Отзывы посетителей</h2>
         <ul class="testimonials__list">
@@ -275,7 +303,7 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper">
