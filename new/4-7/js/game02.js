@@ -6,12 +6,15 @@
   const from = + prompt('Играем в "Угадай число". Введите начало диапозона чисел:');
   const to = + prompt('Играем в "Угадай число". Введите конец диапозона чисел:');
 
-  if (from === to) throw new Error('Извини, я не знаю как быть в таком случае :(');
-
   if (! Number.isNaN(from) && ! Number.isNaN(to)) {
     const numbers = [];
     const guessNumber = getRandomIntInclusive(from, to);
     let numberOfAttempts = Math.round(0.3 * Math.abs(from - to));
+
+    if (numberOfAttempts === 0) {
+      throw new Error('Диапазон слишком мал, попыток нет. Конец игры.');
+    }
+
     let yourNumber = prompt(`Я загадал число! Введите ваш вариант. У вас ${numberOfAttempts} попытк(а/и/ок):`);
 
     while (yourNumber !== null) {
