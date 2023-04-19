@@ -2,12 +2,6 @@
 
 // Task 01
 
-let product = {
-  name: "",
-  price: 0,
-  count: 1,
-};
-
 const cart = {
   items: [],
   totalPrice: 0,
@@ -16,14 +10,14 @@ const cart = {
   getTotalPrice() {
     return this.totalPrice;
   },
-  add(name, price, count) {
+  add(name, price, count = 1) {
     this.items.push({
       name,
       price,
       count,
     });
 
-    this.increaseCount(1);
+    this.increaseCount(count);
     this.calculateItemPrice();
   },
   increaseCount(n) {
@@ -31,7 +25,7 @@ const cart = {
   },
   calculateItemPrice() {
     this.totalPrice = this.items.reduce((sum, item) => {
-      return sum + item.price;
+      return sum + item.price * item.count;
     }, 0);
   },
   clear() {
@@ -46,7 +40,7 @@ const cart = {
   },
 };
 
-cart.add('Samsung Galaxy S3', 500, 1);
+cart.add('Samsung Galaxy S3', 500);
 cart.add('HONOR 20 Lite', 349, 2);
 cart.add('POCO Y5', 199, 3);
 
