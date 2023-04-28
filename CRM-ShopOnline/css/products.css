@@ -1,6 +1,6 @@
 .products {
   max-width: 1300px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 79px 100px 110px;
   background-color: #F2F0F9;
 }
@@ -259,6 +259,10 @@
   .products__control--bottom {
     justify-content: space-between;
     column-gap: 20px;
+  }
+
+  .products__control-page {
+    order: 1;
   }
 }
 
