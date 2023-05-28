@@ -27,7 +27,8 @@ body {
   display: none;
 }
 
-.del-icon {
+.del-icon,
+.edit-icon {
   display: block;
   width: 10px;
   height: 10px;
@@ -37,6 +38,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.edit-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/edit.svg");
 }
 
 .delete.is-visible {
@@ -69,7 +76,6 @@ body {
   z-index: 2;
 }
 
-
 .form-title {
   margin-top: 0;
   padding-bottom: 20px;
@@ -79,6 +85,9 @@ body {
   width: 80px;
 }
 
+.form-group:last-of-type {
+  margin-bottom: 20px;
+}
 
 .form-overlay {
   background-color: rgba(0, 0, 0, 0.6);
