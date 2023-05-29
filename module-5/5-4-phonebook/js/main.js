@@ -184,9 +184,9 @@ const data = [
     tdDel.classList.add('delete');
     tdDel.append(btnDel);
 
-    tdName.classList.add('contact__name');
+    // tdName.classList.add('contact__name');
     tdName.textContent = tr.firstname = firstName;
-    tdSurname.classList.add('contact__surname');
+    // tdSurname.classList.add('contact__surname');
     tdSurname.textContent = tr.surname = surname;
     tdLink.href = `tel:${phone}`;
     tdLink.textContent = phone;
@@ -301,16 +301,30 @@ const data = [
 
       if (target.classList.contains('del-icon')) {
         target.closest('.contact').remove();
+        // Нужно еще удалить этот элемент с коллекции allRow
       }
 
       if (targetClassName === 'firstname' || targetClassName === 'surname') {
+        target.nextElementSibling.removeAttribute('data-sort');
+        target.previousElementSibling.removeAttribute('data-sort');
+
         allRow.sort((a, b) => {
           return a[targetClassName].localeCompare(b[targetClassName]);
         });
 
-        allRow.forEach(elem => {
-          list.append(elem);
-        });
+        if (target.hasAttribute('data-sort')) {
+          target.removeAttribute('data-sort');
+
+          allRow.forEach(elem => {
+            list.prepend(elem);
+          });
+        } else {
+          target.dataset.sort = 'sorted';
+
+          allRow.forEach(elem => {
+            list.append(elem);
+          });
+        }
       }
     });
   };
