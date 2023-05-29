@@ -144,3 +144,8 @@ body {
   color: #fff;
   text-align: center;
 }
+
+.firstname,
+.surname {
+  cursor: pointer;
+}
