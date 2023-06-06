@@ -60,11 +60,19 @@ const formControl = (form, list, name) => {
       const tr = target.closest('tr');
       const id = tr.querySelector('[name=id]').value;
 
-      tr.classList.remove('table-light');
-      tr.classList.add('table-success');
-      tr.children[1].classList.add('text-decoration-line-through');
+      if (tr.classList.contains('table-light')) {
+        tr.classList.remove('table-light');
+        tr.classList.add('table-success');
+        tr.children[1].classList.add('text-decoration-line-through');
 
-      storage.changeTask(name, id, 'status', 'Выполнена');
+        storage.changeTask(name, id, 'status', 'Выполнена');
+      } else {
+        tr.classList.remove('table-success');
+        tr.classList.add('table-light');
+        tr.children[1].classList.remove('text-decoration-line-through');
+
+        storage.changeTask(name, id, 'status', 'В процессе');
+      }
     }
 
     // Нажали кнопку "Удалить"
@@ -93,8 +101,13 @@ const formControl = (form, list, name) => {
 
       if (tdTask.hasAttribute('contenteditable')) {
         tdTask.removeAttribute('contenteditable');
+        tdTask.removeAttribute('style');
+        // tdTask.style.backgroundColor = '#fff3cd';
+        target.textContent = 'Редактировать';
       } else {
         tdTask.setAttribute('contenteditable', 'true');
+        tdTask.style.backgroundColor = '#fff3cd';
+        target.textContent = 'Сохранить';
       }
     }
   });
