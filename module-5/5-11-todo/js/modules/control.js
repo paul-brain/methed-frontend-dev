@@ -102,7 +102,6 @@ const formControl = (form, list, name) => {
       if (tdTask.hasAttribute('contenteditable')) {
         tdTask.removeAttribute('contenteditable');
         tdTask.removeAttribute('style');
-        // tdTask.style.backgroundColor = '#fff3cd';
         target.textContent = 'Редактировать';
       } else {
         tdTask.setAttribute('contenteditable', 'true');

@@ -35,7 +35,7 @@ const createTable = () => {
   thead.insertAdjacentHTML('beforeend', `
     <tr>
       <th>№</th>
-      <th contenteditable>Задача</th>
+      <th>Задача</th>
       <th>Статус</th>
       <th>Действия</th>
     </tr>
