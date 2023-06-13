@@ -1,3 +1,5 @@
+  import {debounce} from './debounce.js';
+
 // Обязательное задание: +1 балл: простая работа со списком
 
 const setTimeoutBlock = document.querySelector('.set-timeout');
@@ -18,8 +20,8 @@ paragraph.textContent = 'Я параграф.';
 
 setTimeoutBlock.append(label, inputText, paragraph);
 
-inputText.addEventListener('keyup', () => {
-  setTimeout(() => {
-    paragraph.textContent = inputText.value;
-  }, 300);
-});
+const debouncedHandle = debounce(() => {
+  paragraph.textContent = inputText.value;
+}, 300);
+
+inputText.addEventListener('keyup', debouncedHandle);
