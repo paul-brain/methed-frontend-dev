@@ -1,0 +1,188 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(27, 26, 27, 0.7);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.overlay--show {
+  visibility: visible;
+}
+
+.overlay--show .modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  top: 145px;
+  left: calc(50% - 300px);
+  max-width: 600px;
+  color: #FFFFFF;
+  background-color: #440F51;
+  /* opacity: 0; */
+
+  /* transition:
+    opacity 1000ms ease-out; */
+  /* transform: scale(1); */
+  /* animation: popup 0.7s; */
+
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+@keyframes popup {
+  10%{
+    transform: scale(0.1);
+  }
+  10%{
+    transform: scale(0.2);
+  }
+  10%{
+    transform: scale(0.3);
+  }
+  10%{
+    transform: scale(0.4);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  60%{
+    transform: scale(0.6);
+  }
+  70%{
+    transform: scale(0.7);
+  }
+  80%{
+    transform: scale(0.8);
+  }
+  90%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  background: url("../img/close.svg") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+
+  transition:
+    transform 100ms ease-in;
+}
+
+.modal__btn-close:hover {
+  transform: rotate(90deg);
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 80px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.form__header {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.form__label-text {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form__field-text {
+  width: 280px;
+  height: 52px;
+  padding: 0 10px;
+
+  background: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.form__btn {
+  padding: 16px 50px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #6C0287;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.form__btn:hover {
+  border: none;
+}
+
+@media (max-width: 1440px) {
+  .form__btn {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .modal {
+    position: static;
+    max-width: 100%;
+  }
+
+  .form__header {
+    font-size: 20px;
+  }
+
+  .form__field-text {
+    width: 220px;
+    height: 42px;
+  }
+
+  .form__btn {
+    max-width: 240px;
+    height: 52px;
+    padding: 12px 40px;
+
+    font-size: 18px;
+  }
+
+  .modal__btn-close {
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}

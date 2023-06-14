@@ -1,68 +1,103 @@
 .faq__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .faq__list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .faq__list-item {
-    position: relative;
-    margin-bottom: 20px;
-    padding: 30px 70px;
+  margin-bottom: 20px;
 
-    background-color: #fff;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #1C1A1A;
-    cursor: pointer;
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.faq__list-item-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 30px 70px;
+
+  font-weight: 700;
+  color: #1C1A1A;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.faq__list-item-text-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height .3s ease-in-out;
+}
+
+.faq__list-item-text {
+  padding: 55px 70px 100px;
+}
+
+.faq__list-item--active .faq__list-item-text-wrapper {
+  height: auto;
 }
 
 .faq__list-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.faq__list-item:nth-child(even) {
-    color: #fff;
-    background-color: var(--bg);
+.faq__list-item:nth-child(even) button {
+  color: #fff;
+  background-color: var(--bg);
 }
 
-.faq__list-item:before {
-    content: "";
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    top: 20px;
-    right: 70px;
-    cursor: pointer;
+.faq__list-item-btn:before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  cursor: pointer;
 
-    transition:
-      background 200ms linear;
+  transition:
+    background 200ms linear;
 }
 
-.faq__list-item:nth-child(odd):before {
+.faq__list-item:nth-child(odd) .faq__list-item-btn:before {
   background: url("../img/open-purple.svg") no-repeat;
 }
 
-.faq__list-item:nth-child(odd):hover:before {
+.faq__list-item:nth-child(odd) .faq__list-item-btn:hover:before {
   background: url("../img/open-purple-hover.svg") no-repeat;
 }
 
-.faq__list-item:nth-child(odd):active:before {
+.faq__list-item:nth-child(odd) .faq__list-item-btn:active:before {
   background: url("../img/open-purple-active.svg") no-repeat;
 }
 
-.faq__list-item:nth-child(even):before {
+.faq__list-item:nth-child(even) .faq__list-item-btn:before {
   background: url("../img/open-white.svg") no-repeat;
 }
 
-.faq__list-item:nth-child(even):hover:before {
+.faq__list-item:nth-child(even) .faq__list-item-btn:hover:before {
   background: url("../img/open-white-hover.svg") no-repeat;
 }
 
-.faq__list-item:nth-child(even):active:before {
+.faq__list-item:nth-child(even) .faq__list-item-btn:active:before {
+  background: url("../img/open-white-active.svg") no-repeat;
+}
+
+.faq__list-item--active:nth-child(odd) .faq__list-item-btn:before,
+.faq__list-item--active:nth-child(odd) .faq__list-item-btn:hover:before {
+  background: url("../img/open-purple-active.svg") no-repeat;
+}
+
+.faq__list-item--active:nth-child(even) .faq__list-item-btn:before,
+.faq__list-item--active:nth-child(even) .faq__list-item-btn:hover:before {
   background: url("../img/open-white-active.svg") no-repeat;
 }
 
@@ -72,11 +107,15 @@
   }
 
   .faq__list-item {
-      margin-bottom: 16px;
-      padding: 23px 25px;
+    margin-bottom: 16px;
 
-      font-size: 22px;
-      line-height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .faq__list-item-btn,
+  .faq__list-item-text {
+    padding: 23px 25px;
   }
 
   .faq__list-item:last-child {
@@ -87,25 +126,25 @@
     margin-bottom: 0;
   }
 
-  .faq__list-item:nth-child(even) {
-      color: #1C1A1A;
-      background-color: #fff;
+  .faq__list-item:nth-child(even) button {
+    color: #1C1A1A;
+    background-color: #fff;
   }
 
-  .faq__list-item:before {
-      top: 12px;
-      right: 20px;
+  .faq__list-item .faq__list-item-btn:before {
+    top: 12px;
+    right: 20px;
   }
 
-  .faq__list-item:nth-child(even):before {
+  .faq__list-item:nth-child(even) .faq__list-item-btn:before {
     background: url("../img/open-purple.svg") no-repeat;
   }
 
-  .faq__list-item:nth-child(even):hover:before {
+  .faq__list-item:nth-child(even) .faq__list-item-btn:hover:before {
     background: url("../img/open-purple-hover.svg") no-repeat;
   }
 
-  .faq__list-item:nth-child(even):active:before {
+  .faq__list-item:nth-child(even) .faq__list-item-btn:active:before {
     background: url("../img/open-purple-active.svg") no-repeat;
   }
 }
@@ -116,13 +155,16 @@
   }
 
   .faq__list-item {
-      padding: 23px 60px;
-
-      font-size: 18px;
-      line-height: 24px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
-  .faq__list-item:before {
+  .faq__list-item-btn,
+  .faq__list-item-text {
+    padding: 23px 60px;
+  }
+
+  .faq__list-item .faq__list-item-btn:before {
       right: 65px;
   }
 }
@@ -133,17 +175,24 @@
   }
 
   .faq__list-item {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
-    padding: 7px 50px 7px 10px;
-    min-height: 46px;
 
     font-size: 12px;
     line-height: 16px;
   }
 
-  .faq__list-item:before {
+  .faq__list-item-btn {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+  }
+
+  .faq__list-item-btn,
+  .faq__list-item-text {
+    padding: 7px 50px 7px 10px;
+  }
+
+  .faq__list-item .faq__list-item-btn:before {
     width: 30px;
     height: 30px;
     top: 7px;
