@@ -72,7 +72,7 @@ document.body.addEventListener('click', ({target}) => {
   if (
     ! target.classList.contains('header__nav-btn')
     && ! target.classList.contains('header__nav-list')
-    && ! target.parentElement.classList.contains('header__nav-item')
+    // && ! target.parentElement.classList.contains('header__nav-item') // Не закрывает при клике на пункт меню
     ) {
     burgerBtn.classList.remove('header__nav-btn--close');
     headerMenu.classList.remove('header__nav-list--open');
