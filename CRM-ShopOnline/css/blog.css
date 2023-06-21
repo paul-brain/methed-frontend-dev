@@ -1,0 +1,137 @@
+.blog {
+  padding: 172px 0 148px;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content:space-around;
+  gap: 50px;
+  max-height: 1175px;
+}
+
+.blog__item-url {
+  max-width: 645px;
+  max-height: 195px;
+  display: flex;
+  gap: 30px;
+}
+
+.blog__item-poster {
+  flex-shrink: 0;
+  max-width: 195px;
+  border-radius: 20px;
+}
+
+.blog__item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog__item-wrapper {
+  padding: 13px 0 3px;
+}
+
+.blog__item-title {
+  max-height: 83px;
+  overflow: hidden;
+
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: #2D2D2D;
+}
+
+.blog__item-published {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #8F8F8F;
+}
+
+.blog__item-meta {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #8F8F8F;
+}
+
+.blog__item-views {
+  margin-right: 27px;
+  padding-left: 25px;
+  background: url('../img/icons/views.svg') center left no-repeat;
+  background-size: 19px;
+}
+
+.blog__item-comments {
+  padding-left: 30px;
+  background: url('../img/icons/comments.svg') center left no-repeat;
+  background-size: 20px;
+}
+
+@media (max-width: 1400px) {
+  .blog {
+    padding: 148px 0 148px;
+  }
+
+  .blog__list {
+    gap: 40px;
+    max-height: none;
+  }
+}
+@media (max-width: 768px) {
+  .blog {
+    padding: 34px 0 34px;
+  }
+
+  .blog__list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .blog__list {
+    gap: 20px;
+  }
+
+  .blog__item-url {
+    max-height: 150px;
+    gap: 20px;
+  }
+
+  .blog__item-poster {
+    max-width: 150px;
+    border-radius: 10px;
+  }
+
+  .blog__item-wrapper {
+    padding: 6px 0 3px;
+  }
+
+  .blog__item-title {
+    max-height: 64px;
+
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  .blog__item-published {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .blog__item-meta {
+    height: 25px;
+    font-size: 14px;
+    line-height: 130%;
+    color: #8F8F8F;
+  }
+}

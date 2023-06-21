@@ -1,7 +1,10 @@
 @import url(normalize.css);
 @import url(fonts.css);
 @import url(global.css);
+@import url(breadcrumbs.css);
+@import url(blog.css);
 @import url(blog_article.css);
+@import url(pagination.css);
 @import url(modal.css);
 @import url(header.css);
 @import url(banner.css);
