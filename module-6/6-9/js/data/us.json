@@ -1,0 +1,110 @@
+{
+    "status": "ok",
+    "totalResults": 30,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "MLSsoccer.com"
+            },
+            "author": "mlssoccer",
+            "title": "MLS history! El Tráfico at Rose Bowl sets single-game attendance record | MLSSoccer.com - MLSsoccer.com",
+            "description": "It was a July 4th celebration for the history books.",
+            "url": "https://www.mlssoccer.com/news/mls-history-el-trafico-at-rose-bowl-sets-single-game-attendance-record",
+            "urlToImage": "https://images.mlssoccer.com/image/private/t_q-best/prd-league/l14qeevznh56vhmtaovt.png",
+            "publishedAt": "2023-07-05T05:37:30Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fox Business"
+            },
+            "author": "Sarah Rumpf-Whitten",
+            "title": "Meta takes aim at Elon Musk's Twitter, to announce rival app Threads - Fox Business",
+            "description": "Facebook parent company, Meta, is set to debut a Twitter rival called Threads as soon as Thursday, July 6, which appears to directly mimic Elon Musk's Twitter.",
+            "url": "https://www.foxbusiness.com/technology/meta-takes-aim-elon-musks-twitter-announce-rival-app-threads",
+            "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2023/07/0/0/dcfe8a7d-1.jpg?ve=1&tl=1",
+            "publishedAt": "2023-07-05T05:36:16Z",
+            "content": "Meta, the parent company of Facebook, revealed Monday a new \"conversation\" app called Threads, which appears to mimic Twitter – a direct challenge to the social media platform owned by Elon Musk.\r\nA … [+4024 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Biden officials must limit contact with social media firms - BBC",
+            "description": "A judge bars officials from contacting platforms over \"content containing protected free speech\".",
+            "url": "https://www.bbc.com/news/technology-66106067",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/85A1/production/_130290243_gettyimages-1506001186.jpg",
+            "publishedAt": "2023-07-05T04:54:56Z",
+            "content": "A US federal judge has limited the Biden administration's communications with social media companies which are aimed at moderating their content.\r\nIn a 155-page ruling on Tuesday, judge Terry Doughty… [+2799 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Tassia Sipahutar",
+            "title": "Stocks Decline as China Data Saps Risk Sentiment: Markets Wrap - Yahoo Finance",
+            "description": "(Bloomberg) -- Futures for US and European benchmarks slid along with Asian stocks Wednesday as growth in China’s services industry slowed, sapping appetite ...",
+            "url": "https://finance.yahoo.com/news/asian-stocks-poised-decline-oil-222511816.html",
+            "urlToImage": "https://media.zenfs.com/en/bloomberg_markets_842/26205c106eba8d59214c570743f5280d",
+            "publishedAt": "2023-07-05T04:31:00Z",
+            "content": "(Bloomberg) -- Futures for US and European benchmarks slid along with Asian stocks Wednesday as growth in Chinas services industry slowed, sapping appetite for equities.\r\nMost Read from Bloomberg\r\nA … [+4843 chars]"
+        },
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": "Robert Costa",
+            "title": "Former GOP congressman and Jan. 6 select committee adviser Denver Riggleman now working with Hunter Biden - CBS News",
+            "description": "Hunter Biden is facing increasing scrutiny from House Republicans over his business dealings.",
+            "url": "https://www.cbsnews.com/news/hunter-biden-denver-riggleman-former-gop-congressman-jan-6-select-committee-adviser/",
+            "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2023/07/05/3014708e-512f-4af2-a1c4-b188aac47a79/thumbnail/1200x630/de0114c13eac1813669722b5d5adf750/gettyimages-1228806625.jpg?v=f3503a7856c58c20acab4eae8bb1f0f4",
+            "publishedAt": "2023-07-05T03:58:00Z",
+            "content": "Former Republican Rep. Denver Riggleman of Virginia — who served as a senior technical adviser to the House select committee probing the Jan. 6, 2021, assault on the Capitol — is working with the leg… [+6961 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Daily Camera"
+            },
+            "author": "Amber Carlson",
+            "title": "Weather update: Boulder July 4 drone show delayed due to lightning - Boulder Daily Camera",
+            "description": "The National Weather Service in Boulder announced a severe thunderstorm watch until 11 p.m. Tuesday night.",
+            "url": "https://www.dailycamera.com/2023/07/04/weather-alert-boulder-makes-changes-to-july-4-drone-show-at-folsom-field/",
+            "urlToImage": "https://www.dailycamera.com/wp-content/uploads/2023/07/DCC-L-CUDRONE_2MJ9336.jpg?w=1024&h=683",
+            "publishedAt": "2023-07-05T02:03:45Z",
+            "content": "The start time of the July 4 drone show in Boulder has been delayed due to lightning, according to the event website. The show is now slated to begin at 9:40 p.m.\r\nCrews quickly place flags and deact… [+3403 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Jack Baer",
+            "title": "Shohei Ohtani, Anthony Rendon exit early after Mike Trout hits IL in nightmare day for Angels - Yahoo Sports",
+            "description": "Ohtani allowed back-to-back homers for the first time in his MLB career before exiting with a blister.",
+            "url": "https://sports.yahoo.com/shohei-ohtani-anthony-rendon-exit-early-after-mike-trout-hits-il-in-nightmare-day-for-angels-020127878.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Ne7Y33dSoJOk3VYP_iW8CA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-07/9ac0ee10-1ad7-11ee-9ebf-bebb8311ccf1",
+            "publishedAt": "2023-07-05T02:01:00Z",
+            "content": "The Los Angeles Angels have had better days.\r\nTuesday began with star outfielder Mike Trouthitting the 10-day injured list after fracturing the hamate bone in his left wrist on a seemingly uneventful… [+2220 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Mashable Team",
+            "title": "Wordle today: Here's the answer and hints for July 5 - Mashable",
+            "description": "Here are some tips and tricks to help you find the answer to \"Wordle\" #746.",
+            "url": "https://mashable.com/article/wordle-today-answer-july-5-2023",
+            "urlToImage": "https://helios-i.mashable.com/imagery/articles/07ITAL8xTug8ody85u2LT9M/hero-image.fill.size_1200x675.v1688517325.jpg",
+            "publishedAt": "2023-07-05T01:06:31Z",
+            "content": null
+        }
+    ]
+}

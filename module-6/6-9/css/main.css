@@ -1,0 +1,194 @@
+.header {
+  padding: 20px 0;
+
+  font-size: 14px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 76px;
+  margin-right: 214px;
+}
+
+.header__search {
+  display: flex;
+  width: 500px;
+  height: 44px;
+  margin-right: 30px;
+
+  border: 1px solid #E6E6E6;
+  border-radius: 22px;
+}
+
+.header__search-input {
+  flex: 1;
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 22px;
+}
+
+.header__search-input:focus {
+  outline: none;
+}
+
+.header__search-submit {
+  width: 62px;
+  background: transparent url("../img/icon-search.svg") top 50% right 20px no-repeat;
+  background-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__choose-country {
+  width: 320px;
+  height: 44px;
+}
+
+.header__select {
+  display: block;
+  width: 100%;
+  padding: 13px 20px;
+
+  background: url("../img/icon-drop-down.svg") top 50% right 20px no-repeat;
+  background-size: 20px;
+
+  border: 1px solid #E6E6E6;
+  border-radius: 22px;
+
+  appearance: none;
+  cursor: pointer;
+}
+
+.header__select::-ms-expand {
+  display: none;
+}
+
+.header__select:focus {
+  outline: none;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.search-results {
+  display: none;
+}
+
+.search-results--show {
+  display: block;
+}
+
+.news__title,
+.search-results__title {
+  padding: 20px 0;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.card {
+  flex-basis: 270px;
+}
+
+.card__poster {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  padding-right: 30px;
+
+  background: url("../img/icon-arrow-up-right.svg") top right no-repeat;
+}
+
+.card__excerpt {
+  margin-bottom: 10px;
+}
+
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+
+  color: #8E8E8E;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 22px 0 20px;
+  border-top: 1px solid #E6E6E6;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.footer__logo {
+  width: 76px;
+  align-self: start;
+}
+
+.footer__copyright {
+  align-self: end;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+
+  color: #F2994A;
+}
+
+.overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.preload {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  background: url("../img/preload.svg") center no-repeat;
+
+  animation: rotate .6s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
