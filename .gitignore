@@ -1,7 +1,11 @@
+node_modules/
 temp/
+dist/
 text.txt
 *.lnk
 .editorconfig
 .eslintrc
 CRM-ShopOnline/ShopOnline mazaj.ru.url
 favicon.ico
+package-lock.json
+.parcel-cache
