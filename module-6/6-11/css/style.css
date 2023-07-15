@@ -152,20 +152,20 @@
   color: #52006A;
 }
 
-.form__input-wrap_holder {
+.form__input-wrap--holder {
   margin-bottom: 27px;
 }
 
-.form__input-wrap_number {
+.form__input-wrap--number {
   margin-bottom: 33px;
 }
 
-.form__input-wrap_date {
+.form__input-wrap--date {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.form__input-wrap_cvv {
+.form__input-wrap--cvv {
   margin-bottom: 50px;
   text-align: center;
 }
