@@ -1,0 +1,21 @@
+{
+  "name": "6-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inputmask": "^5.0.8",
+    "mask-to": "^0.0.7",
+    "redom": "^3.29.1",
+    "vanilla-text-mask": "^5.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
