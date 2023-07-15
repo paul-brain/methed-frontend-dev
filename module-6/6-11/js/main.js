@@ -1,6 +1,6 @@
-import {el, text, setChildren, mount} from '../node_modules/redom/dist/redom.es.min.js';
+import {el, text, setChildren, mount} from 'redom';
 import {transliterate} from './modules/transliterate.js';
-import Inputmask from '../node_modules/inputmask/dist/inputmask.es6.js';
+import Inputmask from 'inputmask';
 
 const wrapper = el("div", { class: "wrapper" });
 const card = el("div", { class: "card" }, [
