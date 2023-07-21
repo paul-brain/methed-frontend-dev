@@ -192,14 +192,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
   /* align-content: space-between; */
-  gap: 43px 32px;
+  gap: 34px 32px;
   width: 300px;
-  padding-top: 25px;
+  padding-top: 16px;
   margin-bottom: 0;
 }
 
 .form__fieldset--name {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 18px ;
@@ -338,7 +339,7 @@
   }
 
   .form__fieldset--select {
-    gap: 36px 32px;
+    gap: 30px 32px;
   }
 
   .form__fieldset--name {

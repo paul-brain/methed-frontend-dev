@@ -1,4 +1,3 @@
-
 /* Частые вопросы: реализация аккордиона */
 const faqListBtns = document.querySelectorAll('.faq__list-item-btn');
 const faqListTexts = document.querySelectorAll('.faq__list-item-text-wrapper');
@@ -90,3 +89,69 @@ window.addEventListener('DOMContentLoaded', () => {
     callBtn.style.display = 'inline-block';
   }
 });
+
+/* Секция «ОТЗЫВЫ ПОСЕТИТЕЛЕЙ» – запускаем слайдер Swiper JS*/
+new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__btn--next',
+    prevEl: '.testimonials__btn--prev',
+  },
+  /* autoplay: {
+    delay: 2000,
+  }, */
+});
+
+/* Валидация формы с помощью Just Validate */
+const telMask = new Inputmask('+7 (999) 999-99-99');
+const inputTel = document.getElementsByName('phone_number')[0];
+
+telMask.mask(inputTel);
+
+const validate = new JustValidate('.reservation__form');
+
+validate
+  .addField('[name="firstname"]', [
+    {
+      rule: 'required',
+      errorMessage: 'Имя обязательно',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Не короче 2 символов',
+    },
+  ])
+  .addField('[name="lastname"]', [
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Не короче 2 символов',
+    },
+  ])
+  .addField('[name="email"]', [
+    {
+      rule: 'required',
+      errorMessage: 'Email обязателен',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email не корректен',
+    },
+  ])
+  .addField('[name="phone_number"]', [
+    {
+      rule: 'required',
+      errorMessage: 'Телефон обязателен',
+    },
+    {
+      validator(value) {			// value не чистое, типа '+7 (968) 875-23-98'
+        const phone = inputTel.inputmask.unmaskedvalue();	// Достаём чистое значение
+
+        return !!(Number(phone) && phone.length === 10);
+      },
+      errorMessage: 'Телефон не корректен',
+    },
+  ]);
+
+/* Работа с формой: дата и время, календарь */

@@ -7,6 +7,10 @@
 	<title>Go – учебный проект</title>
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="js/swiper.min.js" defer></script>
+  <script src="js/inputmask.min.js" defer></script>
+  <script src="js/just-validate.min.js" defer></script>
   <script src="js/main.js" type="module"></script>
 </head>
 <body class="page">
@@ -222,7 +226,7 @@
               <fieldset class="form__fieldset form__fieldset--contacts">
                 <label class="form__label form__label--small">
                   <span class="form__small-text">Телефон</span>
-                  <input class="form__text" type="number" name="phone_number" required>
+                  <input class="form__text" type="text" name="phone_number" required>
                 </label>
                 <label class="form__label form__label--small">
                   <span class="form__small-text">E-mail</span>
@@ -256,31 +260,41 @@
       </div>
     </section>
     <section class="testimonials" id="testimonials">
-      <div class="container container--testimonials">
+      <div class="container">
         <h2 class="testimonials__title">Отзывы посетителей</h2>
-        <ul class="testimonials__list">
-          <li class="testimonials__item response">
-            <figure class="response__photo">
-              <img class="response__img" src="img/testimonial-1.jpg" alt="фото Макса Самойлова">
-              <figcaption class="response__name">Макс Самойлов</figcaption>
-            </figure>
-            <p class="response__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-          </li>
-          <li class="testimonials__item response">
-            <figure class="response__photo">
-              <img class="response__img" src="img/testimonial-2.jpg" alt="фото Оксаны Григорьевой">
-              <figcaption class="response__name">Оксана Григорьева</figcaption>
-            </figure>
-            <p class="response__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
-          </li>
-          <li class="testimonials__item response">
-            <figure class="response__photo">
-              <img class="response__img" src="img/testimonial-3.jpg" alt="фото Никиты Ященко">
-              <figcaption class="response__name">Никита Ященко</figcaption>
-            </figure>
-            <p class="response__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
-          </li>
-        </ul>
+        <div class="swiper">
+          <ul class="testimonials__list swiper-wrapper">
+            <li class="testimonials__item swiper-slide">
+              <div class="response">
+                <figure class="response__photo">
+                  <img class="response__img" src="img/testimonial-1.jpg" alt="фото Макса Самойлова">
+                  <figcaption class="response__name">Макс Самойлов</figcaption>
+                </figure>
+                <p class="response__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <div class="response">
+                <figure class="response__photo">
+                  <img class="response__img" src="img/testimonial-2.jpg" alt="фото Оксаны Григорьевой">
+                  <figcaption class="response__name">Оксана Григорьева</figcaption>
+                </figure>
+                <p class="response__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <div class="response">
+                <figure class="response__photo">
+                  <img class="response__img" src="img/testimonial-3.jpg" alt="фото Никиты Ященко">
+                  <figcaption class="response__name">Никита Ященко</figcaption>
+                </figure>
+                <p class="response__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+              </div>
+            </li>
+          </ul>
+          <div class="testimonials__btn testimonials__btn--prev"></div>
+          <div class="testimonials__btn testimonials__btn--next"></div>
+        </div>
       </div>
     </section>
     <section class="faq">
