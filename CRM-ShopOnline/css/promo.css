@@ -1,5 +1,5 @@
 .promo {
-  margin-bottom: 140px;
+  padding-bottom: 50px;
 }
 
 .promo__list {
@@ -152,7 +152,7 @@
 
 @media (max-width: 1400px) {
   .promo {
-    margin-bottom: 100px;
+    padding-bottom: 40px;
   }
 
   .promo__list {
@@ -228,7 +228,7 @@
 
 @media (max-width: 1024px) {
   .promo {
-    margin-bottom: 70px;
+    padding-bottom: 30px;
   }
 
   .promo__list {
@@ -305,7 +305,7 @@
 
 @media (max-width: 540px) {
   .promo {
-    margin-bottom: 70px;
+    padding-bottom: 25px;
   }
 
   .promo__list {

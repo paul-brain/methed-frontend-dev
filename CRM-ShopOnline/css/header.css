@@ -127,6 +127,7 @@
     column-gap: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .header {
     padding-top: 25px;
