@@ -1,5 +1,5 @@
-.blog {
-  padding: 172px 0 148px;
+.main--blog {
+  padding-bottom: 150px;
 }
 
 .blog__list {
@@ -76,18 +76,14 @@
 }
 
 @media (max-width: 1400px) {
-  .blog {
-    padding: 148px 0 148px;
-  }
-
   .blog__list {
     gap: 40px;
     max-height: none;
   }
 }
 @media (max-width: 768px) {
-  .blog {
-    padding: 34px 0 34px;
+  .main--blog {
+    padding-bottom: 34px;
   }
 
   .blog__list {

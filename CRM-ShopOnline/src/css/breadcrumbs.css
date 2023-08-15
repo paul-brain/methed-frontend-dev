@@ -5,6 +5,8 @@
   font-size: 16px;
   line-height: 130%;
   color: #525252;
+
+  margin-bottom: 80px;
 }
 
 .breadcrumbs__item {
@@ -16,4 +18,22 @@
 .breadcrumbs__item:last-child {
   padding-right: 0;
   background: none;
+}
+
+@media (max-width: 1152px) {
+  .breadcrumbs {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
 }

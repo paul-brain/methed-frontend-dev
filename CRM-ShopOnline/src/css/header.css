@@ -4,6 +4,10 @@
   margin-bottom: 90px;
 }
 
+.header--blog {
+  margin-bottom: 60px;
+}
+
 .header__container {
   display: grid;
   grid-template-columns: 210px 150px minmax(300px, 46%) auto;
