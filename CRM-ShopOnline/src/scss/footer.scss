@@ -1,0 +1,133 @@
+.footer {
+  padding: 80px 0;
+  color: $color-main;
+  background-color: $color-main-dark;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    padding-right: 170px;
+  }
+
+  &__logo-link {
+    width: 190px;
+  }
+
+  /* &__menu {
+    max-height: 310px;
+  } */
+
+  &__menu-name {
+    margin-bottom: 40px;
+
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  &__menu--one {
+    flex-basis: 480px;
+  }
+
+  &__menu--three {
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    height: 225px;
+  }
+
+  &__link-phone {
+    display: block;
+    margin-bottom: 21px;
+  }
+
+  &__link-email {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-item {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  &__design-author {
+    flex-basis: 190px;
+  }
+}
+
+
+@include huge-plus {
+  .footer {
+    &__container {
+      row-gap: 40px;
+      padding-right: 42px;
+    }
+
+    &__menu {
+      font-size: 20px;
+    }
+
+    &__menu-name {
+      font-size: 28px;
+    }
+
+    &__menu--three {
+      font-size: 14px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+      height: 205px;
+    }
+
+    &__link-phone {
+      display: block;
+      margin-bottom: 21px;
+    }
+
+    &__link-email {
+      display: block;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    &__menu--one {
+      flex-basis: auto;
+    }
+
+    &__items {
+      height: auto;
+    }
+  }
+}

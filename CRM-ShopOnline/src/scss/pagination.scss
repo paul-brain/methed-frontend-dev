@@ -1,0 +1,117 @@
+.pagination {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 35px;
+  color: $color-main-dark;
+  text-align: center;
+
+  &__item {
+    display: block;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 13px;
+
+    border: 2px solid $color-blue;
+    border-radius: 4px;
+  }
+
+  &__item--prev,
+  &__item--next {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 27px;
+    border: none;
+  }
+
+}
+
+.pagination__item--prev {
+  margin-right: 29px;
+
+  background-image: url('../img/icons/arrow-grey.svg');
+}
+
+a.pagination__item--prev {
+  background-image: url('../img/icons/arrow-blue.svg');
+  transform: rotate(180deg);
+}
+
+.pagination__item--next {
+  margin-left: 29px;
+
+  background-image: url('../img/icons/arrow-blue.svg');
+}
+
+span.pagination__item--next {
+  background-image: url('../img/icons/arrow-grey.svg');
+  transform: rotate(180deg);
+}
+
+.pagination__item--current {
+  border: 2px solid $color-main-dark;
+}
+
+@include medium {
+  .pagination {
+    padding-top: 60px;
+    gap: 6px;
+
+    font-size: 14px;
+    line-height: 28px;
+
+    &__item {
+      display: block;
+      height: 30px;
+      min-width: 30px;
+      padding: 0 10px;
+    }
+
+    &__item--prev,
+    &__item--next {
+      background-size: 22px;
+    }
+
+    &__item--prev {
+      margin-right: 22px;
+    }
+
+    &__item--next {
+      margin-left: 22px;
+    }
+  }
+}
+
+@include small {
+  .pagination {
+    padding-top: 40px;
+    gap: 4px;
+
+    line-height: 26px;
+
+    &__item {
+      display: block;
+      height: 28px;
+      min-width: 28px;
+      padding: 0 8px;
+    }
+
+    &__item--prev,
+    &__item--next {
+      background-size: 20px;
+    }
+
+    &__item--prev {
+      margin-right: 18px;
+    }
+
+    &__item--next {
+      margin-left: 18px;
+    }
+  }
+}

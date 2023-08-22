@@ -1,0 +1,39 @@
+.breadcrumbs {
+  display: flex;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: $color-grey-dark;
+
+  margin-bottom: 80px;
+
+  &__item {
+    padding-right: 38px;
+
+    background: url('../img/icons/breadcrumbs.svg') top 5px right 16px / 6px no-repeat;
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+    background: none;
+  }
+}
+
+@include large-plus {
+  .breadcrumbs {
+    margin-bottom: 60px;
+  }
+}
+
+@include medium {
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+}
+
+@include small {
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}

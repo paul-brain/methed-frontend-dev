@@ -1,0 +1,61 @@
+@mixin small {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large-plus {
+  @media (max-width: 1152px) {
+    @content;
+  }
+}
+
+@mixin huge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin huge-plus {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+/*
+@include small
+@include medium
+@include large
+@include large-plus
+@include huge
+@include huge-plus
+*/
+
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    display: swap;
+  }
+  src:
+    local("#{$name} #{$weight}"),
+    local("#{$name}-#{$weight}"),
+    url("../fonts/#{$name}-#{$weight}.woff2") format("woff2"),
+    url("../fonts/#{$name}-#{$weight}.woff") format("woff");
+  @if $weight == Regular {
+    font-weight: 400;
+  } @else if $weight == Bold {
+    font-weight: 700;
+  }
+}

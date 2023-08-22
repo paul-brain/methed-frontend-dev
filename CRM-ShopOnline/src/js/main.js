@@ -5,8 +5,9 @@ import {renderArticle} from './modules/render.js';
 document.addEventListener('DOMContentLoaded', () => {
   const url = new URL(window.location.href);
   const path = url.pathname;
+  console.log(path);
   // Выводим таймер на главной странице (index.html)
-  if (path.includes('index.html')) {
+  if (path === '/' || path.includes('index.html')) {
     timer();
   }
 
