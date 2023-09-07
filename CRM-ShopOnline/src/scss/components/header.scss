@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   /* height: 61px; */
   padding-top: 27px;
   margin-bottom: 90px;
@@ -19,7 +20,7 @@
     line-height: 0;
   }
 
-  &__menu {
+  &__menu-btn {
     padding: 9px 28px 12px 61px;
     font-size: 22px;
     line-height: 150%;
@@ -29,11 +30,64 @@
     border-radius: 10px;
   }
 
+  &__menu-btn--close {
+    background: $color-blue url(../img/header-menu-cross.svg) 30px 13px no-repeat;
+  }
+
   &__navbar {
     display: flex;
     justify-content: flex-end;
     height: 100%;
     column-gap: 70px;
+  }
+
+  &__drop {
+    position: absolute;
+    top: 107px;
+    z-index: 1;
+    width: 100%;
+    padding: 52px 0 92px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+  }
+
+  &__drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  &__drop--open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.drop-menu {
+  &__name {
+    margin-bottom: 33px;
+
+    font-size: 38px;
+    line-height: 130%;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+    max-height: 250px;
+  }
+
+  &--one {
+    flex-basis: 530px;
+    margin-right: 200px;
+  }
+
+  &--two {
+    margin-right: 200px;
   }
 }
 
@@ -119,7 +173,7 @@
       gap: 34px 50px;
     }
 
-    &__menu {
+    &__menu-btn {
       grid-row: 2;
       justify-self: start;
     }
@@ -127,12 +181,38 @@
     &__navbar {
       column-gap: 40px;
     }
+
+    &__drop {
+      top: 200px;
+      padding: 40px 0;
+    }
+  }
+
+  .drop-menu {
+    &__name {
+      margin-bottom: 28px;
+
+      font-size: 33px;
+    }
+
+    &__items {
+      gap: 15px 134px;
+      max-height: 230px;
+    }
+
+    &--one {
+      flex-basis: 530px;
+      margin-right: 100px;
+    }
+
+    &--two {
+      margin-right: 100px;
+    }
   }
 
   .search {
     grid-row: 2;
   }
-
 }
 
 @include medium {
@@ -149,14 +229,48 @@
       padding: 2px 0;
     }
 
-    &__menu {
+    &__menu-btn {
       padding: 7px 21px 11px 49px;
       font-size: 16px;
       background-position: 20px center;
     }
 
+    &__menu-btn--close {
+      background-position: 15px center;
+    }
+
     &__navbar {
       column-gap: 30px;
+    }
+
+    &__drop {
+      top: 160px;
+      padding: 30px 0;
+    }
+
+    &__drop-container {
+      row-gap: 30px;
+    }
+  }
+
+  .drop-menu {
+    &__name {
+      margin-bottom: 24px;
+
+      font-size: 28px;
+    }
+
+    &__items {
+      gap: 10px 80px;
+    }
+
+    &--one {
+      flex-basis: 568px;
+      margin-right: 0;
+    }
+
+    &--two {
+      margin-right: 80px;
     }
   }
 
@@ -195,16 +309,45 @@
       height: 25px;
     }
 
-    &__menu {
+    &__menu-btn {
       padding: 5px 14px 7px 31px;
       font-size: 12px;
       background-position: 15px center;
       background-size: 14px;
     }
 
+    &__menu-btn--close {
+      background-position: 10px center;
+    }
+
     &__navbar {
       grid-row: 2;
       column-gap: 20px;
+    }
+  }
+
+  .drop-menu {
+    &__name {
+      margin-bottom: 15px;
+
+      font-size: 20px;
+    }
+
+    &__items {
+      flex-wrap: nowrap;
+      gap: 10px;
+
+      font-size: 16px;
+      max-height: none;
+    }
+
+    &--one {
+      flex-basis: auto;
+      margin-right: 40px;
+    }
+
+    &--two {
+      margin-right: 0;
     }
   }
 

@@ -22,3 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
     renderArticle(id);
   }
 });
+
+/* Кнопка "Меню" в шапке: открыть/закрыть выпадающее меню */
+const headerMenuBtn = document.querySelector('.header__menu-btn');
+const headerMenu = document.querySelector('.header__drop');
+
+headerMenuBtn.addEventListener('click', () => {
+  headerMenuBtn.classList.toggle('header__menu-btn--close');
+  headerMenu.classList.toggle('header__drop--open');
+});
+
+document.body.addEventListener('click', ({target}) => {
+  if (
+    ! target.classList.contains('header__menu-btn')
+    && ! target.classList.contains('header__drop')
+    ) {
+    headerMenuBtn.classList.remove('header__menu-btn--close');
+    headerMenu.classList.remove('header__drop--open');
+  }
+});
