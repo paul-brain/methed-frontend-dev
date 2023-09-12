@@ -10,6 +10,7 @@ import cleanCSS from 'gulp-clean-css';
 import terser from 'gulp-terser';
 import sourcemaps from 'gulp-sourcemaps';
 import gulpImg from 'gulp-image';
+import autoprefixer from 'gulp-autoprefixer';
 
 const prepros = true;
 const sass = gulpSass(sassPkg);
@@ -41,6 +42,7 @@ export const style = () => gulp
       specialComments: 0,
     }
   }))
+  .pipe(autoprefixer())
   .pipe(sourcemaps.write('../maps'))
   .pipe(gulp.dest('dist/css'))
   .pipe(browserSync.stream());

@@ -42,6 +42,7 @@
     flex-wrap: wrap;
     gap: 15px 30px;
     height: 225px;
+    line-height: 150%;
   }
 
   &__link-phone {
@@ -84,43 +85,21 @@
 @include huge-plus {
   .footer {
     &__container {
-      row-gap: 40px;
+      row-gap: 60px;
       padding-right: 42px;
     }
 
-    &__menu {
-      font-size: 20px;
+    &__logo-link {
+      width: 100%;
     }
 
     &__menu-name {
-      font-size: 28px;
-    }
-
-    &__menu--three {
-      font-size: 14px;
-    }
-
-    &__items {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 10px 30px;
-      height: 205px;
-    }
-
-    &__link-phone {
-      display: block;
-      margin-bottom: 21px;
-    }
-
-    &__link-email {
-      display: block;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
     }
   }
 }
 
-@media (max-width: 1280px) {
+@include huge {
   .footer {
     &__menu--one {
       flex-basis: auto;
@@ -128,6 +107,140 @@
 
     &__items {
       height: auto;
+    }
+  }
+}
+
+@include large {
+  .footer {
+    padding: 40px 0;
+
+    &__container {
+      row-gap: 40px;
+    }
+
+    &__logo-img {
+      width: 152px;
+    }
+
+    &__menu-name {
+      margin-bottom: 20px;
+
+      font-size: 26px;
+    }
+
+    &__menu--one {
+      margin-bottom: 13px;
+    }
+
+    &__menu--three {
+      font-size: 12px;
+    }
+
+    &__items {
+      gap: 10px;
+      font-size: 16px;
+    }
+
+    &__link-phone {
+      margin-bottom: 13px;
+    }
+
+    &__link-email {
+      margin-bottom: 30px;
+    }
+
+    &__social {
+      gap: 15px;
+    }
+
+    &__bottom {
+      font-size: 12px;
+    }
+
+    &__design-author {
+      line-height: 180%;
+    }
+  }
+}
+
+@include medium {
+  .footer {
+    padding: 30px 0 20px;
+
+    &__container {
+      // flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &__logo-img {
+      width: 127px;
+    }
+
+    &__menu-name {
+      margin-bottom: 10px;
+
+      font-size: 20px;
+    }
+
+    &__menu--one {
+      margin-bottom: 0;
+    }
+
+    &__menu--three {
+      margin-bottom: 40px;
+      font-size: 10px;
+    }
+
+    &__items {
+      gap: 8px;
+      font-size: 12px;
+      line-height: 120%;
+    }
+
+    &__link-phone {
+      margin-bottom: 9px;
+    }
+
+    &__link-email {
+      margin-bottom: 23px;
+    }
+
+    &__bottom {
+      font-size: 10px;
+    }
+
+    &__design-author {
+      line-height: 160%;
+    }
+  }
+}
+
+@include small {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__menu-name {
+      background-image: url("../img/icon-sign-down.svg");
+      background-position: 88px center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &__menu-name--opened {
+      background-image: url("../img/icon-sign-up.svg");
+    }
+
+    &__menu--two &__menu-name,
+    &__menu--three &__menu-name {
+      background: none;
+      cursor: auto;
+    }
+
+    &__menu--one &__items {
+      display: none;
     }
   }
 }

@@ -7,12 +7,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": ["cover 99.1%", "not IE 11"],
   "author": "PB",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cssimport": "^7.0.0",
     "gulp-htmlmin": "^5.0.1",

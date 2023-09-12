@@ -1,12 +1,13 @@
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
   color: $color-grey-dark;
 
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 
   &__item {
     padding-right: 38px;
@@ -26,14 +27,26 @@
   }
 }
 
-@include medium {
+@include large {
   .breadcrumbs {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 14px;
+
+    &__item {
+      background-size: 5px;
+      // background-position: 5px right 16px;
+    }
   }
 }
 
-@include small {
+@include medium {
   .breadcrumbs {
     margin-bottom: 30px;
+    font-size: 8px;
+
+    &__item {
+      background-size: 4px;
+      background-position: top 1px right 16px;
+    }
   }
 }

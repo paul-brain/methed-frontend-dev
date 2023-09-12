@@ -41,3 +41,18 @@ document.body.addEventListener('click', ({target}) => {
     headerMenu.classList.remove('header__drop--open');
   }
 });
+
+/* Меню в футере на мобильной версии */
+const footerMenuName = document.querySelector('.footer__menu-name');
+
+footerMenuName.addEventListener('click', () => {
+  if (screen.width <= 540) {
+    if (footerMenuName.classList.contains('footer__menu-name--opened')) {
+      footerMenuName.classList.remove('footer__menu-name--opened');
+      footerMenuName.nextElementSibling.style.display = 'none';
+    } else {
+      footerMenuName.classList.add('footer__menu-name--opened');
+      footerMenuName.nextElementSibling.style.display = 'flex';
+    }
+  }
+});
