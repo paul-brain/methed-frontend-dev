@@ -90,8 +90,25 @@
     width: 33px;
     height: 33px;
     border: none;
-    background: transparent url(../img/icon-favorite.svg) no-repeat;
+    background-color: transparent;
+    color: $color-blue;
     vertical-align: middle;
+
+    &--active {
+      color: $color-red;
+    }
+
+    &:hover {
+      color: $color-blue-light;
+    }
+
+    &:active {
+      color: $color-red;
+    }
+
+    &:focus {
+      color: $color-grey-dark;
+    }
   }
 
   &__delivery-seller {

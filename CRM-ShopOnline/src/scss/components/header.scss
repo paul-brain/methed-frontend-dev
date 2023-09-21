@@ -29,6 +29,16 @@
     border: none;
     background: $color-blue url(../img/header-menu-bg.svg) 30px center no-repeat;
     border-radius: 10px;
+
+    &:hover,
+    &:active {
+      background-color: $color-blue-light;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: $color-blue-dark;
+    }
   }
 
   &__menu-btn--close {
@@ -105,10 +115,18 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 130%;
-    color: $color-grey;
+    color: $color-main-dark;
     border: none;
     outline: none;
     background-color: transparent;
+
+    ::placeholder {
+      color: $color-grey;
+    }
+  }
+
+  &__text:focus::placeholder{
+    color: transparent;
   }
 
   &__btn {
@@ -117,6 +135,15 @@
     background: $color-blue url(../img/search.svg) center center no-repeat;
     border-radius: 30px;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color-blue-light;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: $color-blue-dark;
+    }
   }
 }
 
@@ -234,6 +261,7 @@
       padding: 7px 21px 11px 49px;
       font-size: 16px;
       background-position: 20px center;
+      border-radius: 6px;
     }
 
     &__menu-btn--close {
@@ -315,6 +343,7 @@
       font-size: 12px;
       background-position: 15px center;
       background-size: 14px;
+      border-radius: 4px;
     }
 
     &__menu-btn--close {

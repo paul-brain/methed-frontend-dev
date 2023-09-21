@@ -8,7 +8,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 35px;
-  color: $color-main-dark;
+  color: $color-blue;
   text-align: center;
 
   &__item {
@@ -19,6 +19,17 @@
 
     border: 2px solid $color-blue;
     border-radius: 4px;
+
+    &:hover {
+      border-color: $color-blue-light;
+      color: $color-blue-light;
+    }
+
+    &:focus {
+      border-color: $color-blue-dark;
+      color: $color-blue-dark;
+      outline: 1px solid $color-blue-dark;
+    }
   }
 
   &__item--prev,
@@ -40,12 +51,30 @@
 a.pagination__item--prev {
   background-image: url('../img/icons/arrow-blue.svg');
   transform: rotate(180deg);
+
+  &:hover,
+  &:active {
+    background-image: url('../img/icons/arrow-blue-light.svg');
+  }
+
+  &:focus {
+    background-image: url('../img/icons/arrow-blue-dark.svg');
+  }
 }
 
 .pagination__item--next {
   margin-left: 29px;
 
   background-image: url('../img/icons/arrow-blue.svg');
+
+  &:hover,
+  &:active {
+    background-image: url('../img/icons/arrow-blue-light.svg');
+  }
+
+  &:focus {
+    background-image: url('../img/icons/arrow-blue-dark.svg');
+  }
 }
 
 span.pagination__item--next {
@@ -53,8 +82,10 @@ span.pagination__item--next {
   transform: rotate(180deg);
 }
 
-.pagination__item--current {
+.pagination__item--current,
+.pagination__item--current:hover {
   border: 2px solid $color-main-dark;
+  color: $color-main-dark;
 }
 
 @include medium {

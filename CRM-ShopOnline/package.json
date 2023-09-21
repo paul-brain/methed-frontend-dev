@@ -7,17 +7,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserslist": ["cover 99.1%", "not IE 11"],
+  "browserslist": [
+    "cover 99.1%",
+    "not IE 11"
+  ],
   "author": "PB",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
     "browser-sync": "^2.29.3",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cssimport": "^7.0.0",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
     "gulp-image": "^6.3.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",

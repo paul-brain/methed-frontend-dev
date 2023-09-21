@@ -1,4 +1,5 @@
 import gulp from 'gulp';
+import gulpif from 'gulp-if';
 import browserSync  from 'browser-sync';
 import * as sassPkg  from 'sass';
 import gulpSass  from 'gulp-sass';
@@ -11,16 +12,27 @@ import terser from 'gulp-terser';
 import sourcemaps from 'gulp-sourcemaps';
 import gulpImg from 'gulp-image';
 import autoprefixer from 'gulp-autoprefixer';
+import babel from 'gulp-babel';
 
 const prepros = true;
 const sass = gulpSass(sassPkg);
+let dev = false;
+
+export const develop = async () => {
+  dev = true;
+};
 
 export const html = () => gulp
   .src('src/*.html')
-  .pipe(htmlmin({
-    removeComments: true,
-    collapseWhitespace: true,
-  }))
+  .pipe(
+    gulpif(
+      !dev,
+      htmlmin({
+        removeComments: true,
+        collapseWhitespace: true,
+      }),
+    )
+  )
   .pipe(gulp.dest('dist'))
   .pipe(browserSync.stream());
 
@@ -37,12 +49,25 @@ export const style = () => gulp
   .src('src/scss/style.scss')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
-  .pipe(cleanCSS({
-    2: {			// уровень 2 (группирует медиа-запросы)
-      specialComments: 0,
-    }
-  }))
-  .pipe(autoprefixer())
+  .pipe(
+    gulpif(
+      !dev,
+      cleanCSS({
+        2: {			// уровень 2 (группирует медиа-запросы)
+          specialComments: 0,
+        },
+      }),
+    ),
+  )
+  .pipe(
+    gulpif(
+      !dev,
+      autoprefixer({
+        cascade: false,
+        grid: false,
+      }),
+    ),
+  )
   .pipe(sourcemaps.write('../maps'))
   .pipe(gulp.dest('dist/css'))
   .pipe(browserSync.stream());
@@ -50,6 +75,9 @@ export const style = () => gulp
 export const js = () => gulp
   .src('src/js/**/*.js')
   .pipe(sourcemaps.init())
+/*   .pipe(babel({
+    presets: ['@babel/preset-env'],
+  })) */
   .pipe(terser())
   .pipe(sourcemaps.write('../maps'))
   .pipe(gulp.dest('dist/js'))
@@ -57,9 +85,34 @@ export const js = () => gulp
 
 export const img = () => gulp
   .src('src/img/**/*.{jpg,jpeg,png,gif,svg}')
-  .pipe(gulpImg())
+  .pipe(
+    gulpif(
+      !dev,
+      gulpImg({
+        optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+        pngquant: ['--speed=1', '--force', 256],
+        zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+        jpegRecompress: [
+          '--strip',
+          '--quality',
+          'medium',
+          '--min',
+          40,
+          '--max',
+          80,
+        ],
+        mozjpeg: ['-optimize', '-progressive'],
+        gifsicle: ['--optimize'],
+        svgo: true,
+      }),
+    ),
+  )
   .pipe(gulp.dest('dist/img'))
-  .pipe(browserSync.stream());
+  .pipe(
+    browserSync.stream({
+      once: true,
+    }),
+  );
 
 export const copy = () => gulp
   .src([
@@ -107,4 +160,4 @@ export const base = gulp.parallel(html, style, js, copy, img);
 
 export const build = gulp.series(clear, base);
 
-export default gulp.series(base,server);
+export default gulp.series(develop, base, server);
