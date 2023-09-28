@@ -1,3 +1,20 @@
+// Создание внутренних блоков таймера (дни, часы, минуты, секунды)
+export const createTimerBlock = (term) => { // term in [days, hours, minutes, seconds]
+  const termWrapper = document.createElement('p');
+  const timerCountElement = document.createElement('span');
+  const timerUnitsElement = document.createElement('span');
+
+  termWrapper.classList.add('timer__item', `timer__item-${term}`);
+  timerCountElement.classList.add('timer__count', `timer__count-${term}`);
+  timerUnitsElement.classList.add('timer__units', `timer__units-${term}`);
+  termWrapper.append(timerCountElement, timerUnitsElement);
+
+  return {
+    termWrapper,
+    timerCountElement
+  };
+};
+
 /* Страница «Блог» */
 const createItemPost = (id, title) => {
   const postElement = document.createElement('li');
