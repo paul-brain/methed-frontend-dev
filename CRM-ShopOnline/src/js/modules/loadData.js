@@ -1,5 +1,8 @@
-export const loadPosts = async (pageNum) => {
-  let url = 'https://gorest.co.in/public-api/posts';
+const BLOGAPIURL = 'https://gorest.co.in/public-api/';
+const SHOPAPIURL = 'https://knowledgeable-mammoth-parka.glitch.me/';
+
+const loadPosts = async (pageNum) => {
+  let url = BLOGAPIURL + 'posts';
 
   if (pageNum) {
     url += `?page=${pageNum}`;
@@ -21,8 +24,8 @@ export const loadPosts = async (pageNum) => {
   };
 };
 
-export const loadArticle = async (ArticleId) => {
-  let url = 'https://gorest.co.in/public-api/posts/' + ArticleId;
+const loadArticle = async (ArticleId) => {
+  let url = BLOGAPIURL + 'posts/' + ArticleId;
 
   const result = await fetch(url);
   const data = await result.json();
@@ -37,8 +40,8 @@ export const loadArticle = async (ArticleId) => {
   };
 };
 
-export const loadAuthor = async (user_id) => {
-  let url = 'https://gorest.co.in/public-api/users/' + user_id;
+const loadAuthor = async (user_id) => {
+  let url = BLOGAPIURL + 'users/' + user_id;
 
   const result = await fetch(url);
   const data = await result.json();
@@ -51,4 +54,50 @@ export const loadAuthor = async (user_id) => {
 
     return name;
   }
+};
+
+const loadProducts = async (category) => {
+  let url = SHOPAPIURL + 'api/goods';
+
+  if (category) {
+    url += `/category/${category}`;
+  }
+
+  const result = await fetch(url);
+  const data = await result.json();
+
+  // const result = '[{"title":"Смартфон Ксяоми Ф","description":"Смартфон    это представитель флагманской линейки выпущенной во второй половине  года И он полностью соответствует такому позиционированию предоставляя своим обладателям возможность пользоваться отличными камерами ни в чем себя не ограничивать при запуске игр и других требовательных приложений","price":"32000","discount":0,"count":"4","units":"шт","image":"image/notimage.jpg","category":"Мобильный телефон","id":"9766739542"},{"title":"Радиоуправляемый автомобиль","description":"Внедорожник на дистанционном управлении Скорость двадцать км ч Возраст семь четырнадцать лет","price":"6000","discount":"5","count":"1","units":"шт","image":"image/5439848859.jpg","category":"Игрушки","id":"5439848859"},{"title":"Моноколесо Нинебот ОнеЗ","description":"Моноколесо   обладает мощными характеристиками и продолжительной автономной работой Благодаря мотору мощностью  Вт транспортное средство способно развивать скорость в пределах  кмч Колесо с широкой покрышкой отличается высокими показателями сцепления и устойчивостью на различных поверхностях Брызговик предусматривает возможность езды в любую погоду а светодиодная фара и подсветка с боковой стороны позволяют перемещаться в темное время суток Педали с нескользящим покрытием гарантируют комфортное размещение на моноколесе   Аккумулятор обладающий энергоемкостью  Втч гарантирует около  км на одном цикле зарядки","price":"140000","discount":"10","count":"7","units":"шт","image":"image/3372693167.jpg","category":"Портативный транспорт","id":"3372693167"},{"title":"Система виртуальной реальности ПРО","description":"Система виртуальной реальности    представляет собой комплект в который включен шлем контроллеры и базовые   В шлеме предусмотрено  экрана разрешением каждого из которых составляет  пикселей что позволит вам насладиться невероятно реалистичной картинкой Модель    хороша и тем что в ней появилось  микрофона с функцией шумоподавления обеспечивающих насыщенное и четкое звучание Система с легкостью подключается к ПК или ноутбуку при помощи интерфейса Благодаря хорошо продуманной форме шлем подходит к любой форме лица","price":"128299","discount":0,"count":"10","units":"шт","image":"image/6240974802.jpg","category":"ВР системы","id":"6240974802"},{"title":"Электрический чайник Тефал Гласс Кеттле","description":"Электрочайник   имеет внутреннюю подсветку что создает комфортные условия при использовании в ночное время Модель характеризуется оптимальной мощностью поэтому вода закипает в течение нескольких минут","price":"48900","discount":0,"count":"11","units":"шт","image":"image/0008853797.jpg","category":"Кухонная техника","id":"0008853797"},{"title":"Новая игрушка","description":"полное руководство по   полное руководство по   и   полное руководство по   и   полное руководство по   и","price":"1290","discount":0,"count":"3","units":"шт","image":"image/notimage.jpg","category":"Игрушки","id":"7300644101"}]';
+  // const data = JSON.parse(result);
+
+  return data;
+};
+
+const loadProduct = async (id) => {
+  let url = SHOPAPIURL + 'api/goods/' + id;
+
+  const result = await fetch(url);
+  const data = await result.json();
+
+  // const result = '{"title":"Смартфон Ксяоми Ф","description":"Смартфон    это представитель флагманской линейки выпущенной во второй половине  года И он полностью соответствует такому позиционированию предоставляя своим обладателям возможность пользоваться отличными камерами ни в чем себя не ограничивать при запуске игр и других требовательных приложений","price":"32000","discount":0,"count":"4","units":"шт","image":"image/notimage.jpg","category":"Мобильный телефон","id":"9766739542"}';
+  // const data = JSON.parse(result);
+
+  return data;
+};
+
+const loadCategories = async () => {
+  let url = SHOPAPIURL + 'api/category/';
+
+  const result = await fetch(url);
+  const data = await result.json();
+
+  return data;
+};
+
+export default {
+  loadPosts,
+  loadArticle,
+  loadAuthor,
+  loadProducts,
+  loadProduct,
+  loadCategories,
 };

@@ -170,10 +170,24 @@
     background-image: url(../img/shopping-cart.svg);
   }
 
-  &__btn--basket:after {
+  /* &__btn--basket:after {
     position: absolute;
     display: block;
     content: "2";
+    top: -4px;
+    right: 13px;
+    width: 14px;
+    height: 18px;
+    color: $color-blue;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: $color-main;
+    border-radius: 50%;
+  } */
+
+  &__count {
+    position: absolute;
     top: -4px;
     right: 13px;
     width: 14px;

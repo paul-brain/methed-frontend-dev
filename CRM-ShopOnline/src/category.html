@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/style.css">
+  <title>Категория</title>
   <script src="js/main.js" type="module"></script>
-
-  <title>Корзина</title>
 </head>
-<body class="page-cart">
-  <header class="header header--product">
+<body class="page category">
+  <header class="header">
     <div class="container header__container">
       <a href="/" class="header__logo-link" aria-label="Ссылка на главную">
         <img class="header__logo-img" src="img/logo.svg" alt="Logo ShopOnline">
@@ -63,213 +61,102 @@
     </div>
   </header>
 
-  <main class="main main--cart">
+  <section class="goods">
     <div class="container">
+      <h1 class="goods__header">Электроника</h1>
+      <ul class="goods__list">
 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="/" class="breadcrumbs__item-link">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">Корзина</li>
-      </ul>
-
-      <div class="cart">
-        <div class="cart__goods">
-          <h1 class="cart__header">Корзина<span class="cart__count">2</span></h1>
-          <div class="cart__actions">
-            <label class="cart__checkbox-label">
-              <input class="cart__checkbox-input" type="checkbox" name="chooseAll" checked>
-              Выбрать все
-            </label>
-            <button class="cart__btn-delete cart__btn-delete--all"></button>
-          </div>
-          <ul class="cart__list">
-
-            <!-- <li class="cart__item">
-              <label class="cart__checkbox-label">
-                <input class="cart__checkbox-input" type="checkbox" name="chooseOne" checked>
-              </label>
-              <img class="cart__item-img" src="img/cart-product-1.jpg" alt="cart-product-1">
-              <div class="cart__item-data">
-                <h3 class="cart__item-title">
-                  <a class="cart__item-url" href="#">15.6" Игровой ноутбук ASUS G513IE-HN004T</a>
-                </h3>
-                <ul class="cart__item-properties">
-                  <li class="cart__item-property">Цвет: черный</li>
-                  <li class="cart__item-property">Оперативная память: 16 ГБ</li>
-                </ul>
-              </div>
-              <div class="cart__item-quantity">
-                <button class="cart__item-btn-minus">-</button>
-                1
-                <button class="cart__item-btn-plus">+</button>
-              </div>
-              <div class="cart__item-prices">
-                <div class="cart__item-price">109 090 ₽</div>
-                <div class="cart__item-price-old">140 590 ₽</div>
-                <div class="cart__item-price-on-credit">В кредит от 5600 ₽</div>
-              </div>
-              <button class="cart__btn-delete cart__btn-delete--one"></button>
-            </li>
-
-            <li class="cart__item">
-              <label class="cart__checkbox-label">
-                <input class="cart__checkbox-input" type="checkbox" name="chooseOne" checked>
-              </label>
-              <img class="cart__item-img" src="img/cart-product-2.jpg" alt="cart-product-1">
-              <div class="cart__item-data">
-                <h3 class="cart__item-title">
-                  <a class="cart__item-url" href="#">Постельное белье</a>
-                </h3>
-                <ul class="cart__item-properties">
-                  <li class="cart__item-property">Цвет: белый</li>
-                  <li class="cart__item-property">Размер: Евро, двуспальное</li>
-                </ul>
-              </div>
-              <div class="cart__item-quantity">
-                <button class="cart__item-btn-minus">-</button>
-                1
-                <button class="cart__item-btn-plus">+</button>
-              </div>
-              <div class="cart__item-prices">
-                <div class="cart__item-price">3902 ₽</div>
-                <div class="cart__item-price-old">4490 ₽</div>
-                <div class="cart__item-price-on-credit">В кредит от 560 ₽</div>
-              </div>
-              <button class="cart__btn-delete cart__btn-delete--one"></button>
-            </li> -->
-
-          </ul>
-        </div>
-
-        <div class="cart__delivery">
-          <h2 class="cart__delivery-title">
-            Способ доставки
-            <button class="cart__delivery-btn-change">Изменить</button>
-          </h2>
-          <div class="cart__delivery-table">
-            <div class="cart__delivery-point">Пункт выдачи</div>
-            <div class="cart__delivery-address">г. Москва (Московская область), улица Павлика Морозова, д. 48, (Пункт выдачи), Ежедневно 10:00-21:00</div>
-            <div class="cart__delivery-cost-title">Стоимость доставки</div>
-            <div class="cart__delivery-cost">Бесплатно</div>
-            <div class="cart__delivery-cost-mobile">Бесплатная доставка</div>
-            <div class="cart__delivery-date">10-13 февраля</div>
-            <div class="cart__delivery-goods">
-              <!-- <a class="cart__delivery-good-link" href="#"><img class="cart__delivery-good-img" src="img/cart-product-1.jpg" alt="cart-product-1"></a>
-              <a class="cart__delivery-good-link" href="#"><img class="cart__delivery-good-img" src="img/cart-product-2.jpg" alt="cart-product-2"></a> -->
+        <li class="goods__item item-card" tabindex="0">
+          <a href="#" class="item-card__link">
+            <figure class="item-card__poster">
+              <img src="img/item-card-1.jpg" alt="Пара футболок" class="item-card__img">
+              <div class="item-card__discount">-50%</div>
+            </figure>
+            <div class="item-card__prices">
+              <span class="item-card__price-new">1299 ₽</span>
+              <span class="item-card__price-old">2598 ₽</span>
             </div>
-          </div>
-        </div>
-
-        <div class="cart__summary">
-          <div class="cart__summary-total-label">Итого:</div>
-          <div class="cart__summary-total-price">112 992 ₽</div>
-          <dl class="cart__summary-details">
-            <dt>Товары, 2  шт.</dt>
-            <dd>145 080 ₽</dd>
-            <dt>Скидка</dt>
-            <dd>32 088 ₽</dd>
-            <dt>Доставка</dt>
-            <dd>Бесплатно</dd>
-          </dl>
-          <div class="cart__summary-ship">
-            <span class="cart__summary-ship-label">Доставка:</span>
-            <span class="cart__summary-ship-info">Пункт выдачи</span>
-          </div>
-          <div class="cart__summary-ship-details">
-            <span class="cart__summary-ship-time">Ежедневно 10:00 - 21:00</span>
-            <span class="cart__summary-ship-address">г. Москва (Московская область), улица Павлика Морозова, д. 48</span>
-          </div>
-          <div class="cart__summary-date">
-            <span class="cart__summary-date-label">Дата:</span>
-            <span class="cart__summary-date-info">10-13 февраля</span>
-          </div>
-          <div class="cart__summary-pay">
-            <span class="cart__summary-pay-label">Оплата:</span>
-            <span class="cart__summary-pay-info">Картой</span>
-          </div>
-          <button class="cart__btn-order">Заказать</button>
-          <label class="cart__customer-agreement">
-            <label class="cart__checkbox-label">
-              <input class="cart__checkbox-input" type="checkbox" name="agree" checked>
-              <span class="cart__customer-agreement-text">Согласен с условиями <a class="cart__customer-agreement-link" href="#">правил пользования торговой площадкой и правилами возврата</a></span>
-            </label>
-          </label>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <section class="profitable">
-    <div class="container">
-      <h2 class="profitable__header">Рекомендуем также</h2>
-      <ul class="profitable__list">
-
-        <li class="profitable__item item-card" tabindex="0">
-          <figure class="item-card__poster">
-            <img src="img/products/recommend-1.jpg" alt="Ноутбук Dell" class="item-card__img" width="420px" height="295px">
-          </figure>
-          <div class="item-card__prices">
-            <span class="item-card__price-new">96 320 ₽</span>
-          </div>
-          <div class="item-card__name">Ноутбук Dell</div>
+            <div class="item-card__name">Пара футболок</div>
+          </a>
         </li>
 
-        <li class="profitable__item item-card" tabindex="0">
+        <li class="goods__item item-card" tabindex="0">
           <figure class="item-card__poster">
-            <img src="img/products/recommend-2.jpg" alt="Ноутбук HP 250" class="item-card__img">
+            <img src="img/item-card-2.jpg" alt="Кроссовки" class="item-card__img">
+            <div class="item-card__discount">-40%</div>
           </figure>
           <div class="item-card__prices">
-            <span class="item-card__price-new">64 949 ₽</span>
+            <span class="item-card__price-new">2099 ₽</span>
+            <span class="item-card__price-old">5938 ₽</span>
           </div>
-          <div class="item-card__name">Ноутбук HP 250</div>
+          <div class="item-card__name">Кроссовки</div>
         </li>
-
-        <li class="profitable__item item-card" tabindex="0">
+        <li class="goods__item item-card" tabindex="0">
           <figure class="item-card__poster">
-            <img src="img/products/recommend-3.jpg" alt="Ноутбук HP 15" class="item-card__img">
-          </figure>
-          <div class="item-card__prices">
-            <span class="item-card__price-new">37 980 ₽</span>
-          </div>
-          <div class="item-card__name">Ноутбук HP 15</div>
-        </li>
-
-        <li class="profitable__item item-card" tabindex="0">
-          <figure class="item-card__poster">
-            <img src="img/products/recommend-4.jpg" alt="Ноутбук ASUS ZenBook Pro" class="item-card__img">
+            <img src="img/item-card-3.jpg" alt="Постельное белье" class="item-card__img">
             <div class="item-card__discount">-10%</div>
           </figure>
           <div class="item-card__prices">
-            <span class="item-card__price-new">102 680 ₽</span>
-            <span class="item-card__price-old">105 999 ₽</span>
+            <span class="item-card__price-new">3902 ₽</span>
+            <span class="item-card__price-old">4490 ₽</span>
           </div>
-          <div class="item-card__name">Ноутбук ASUS ZenBook Pro</div>
+          <div class="item-card__name">Постельное белье</div>
         </li>
-
-        <li class="profitable__item item-card" tabindex="0">
+        <li class="goods__item item-card" tabindex="0">
           <figure class="item-card__poster">
-            <img src="img/products/recommend-1.jpg" alt="Ноутбук Dell" class="item-card__img" width="420px" height="295px">
+            <img src="img/item-card-4.jpg" alt="Фен" class="item-card__img">
+            <div class="item-card__discount">-30%</div>
           </figure>
           <div class="item-card__prices">
-            <span class="item-card__price-new">96 320 ₽</span>
+            <span class="item-card__price-new">2999 ₽</span>
+            <span class="item-card__price-old">6030 ₽</span>
           </div>
-          <div class="item-card__name">Ноутбук Dell</div>
+          <div class="item-card__name">Фен</div>
         </li>
-
-        <li class="profitable__item item-card" tabindex="0">
+        <li class="goods__item item-card" tabindex="0">
           <figure class="item-card__poster">
-            <img src="img/products/recommend-4.jpg" alt="Ноутбук ASUS ZenBook Pro" class="item-card__img">
+            <img src="img/item-card-3.jpg" alt="Постельное белье" class="item-card__img">
             <div class="item-card__discount">-10%</div>
           </figure>
           <div class="item-card__prices">
-            <span class="item-card__price-new">102 680 ₽</span>
-            <span class="item-card__price-old">105 999 ₽</span>
+            <span class="item-card__price-new">3902 ₽</span>
+            <span class="item-card__price-old">4490 ₽</span>
           </div>
-          <div class="item-card__name">Ноутбук ASUS ZenBook Pro</div>
+          <div class="item-card__name">Постельное белье</div>
         </li>
-
+        <li class="goods__item item-card" tabindex="0">
+          <figure class="item-card__poster">
+            <img src="img/item-card-4.jpg" alt="Фен" class="item-card__img">
+            <div class="item-card__discount">-30%</div>
+          </figure>
+          <div class="item-card__prices">
+            <span class="item-card__price-new">2999 ₽</span>
+            <span class="item-card__price-old">6030 ₽</span>
+          </div>
+          <div class="item-card__name">Фен</div>
+        </li>
+        <li class="goods__item item-card" tabindex="0">
+          <figure class="item-card__poster">
+            <img src="img/item-card-7.jpg" alt="Варежки-мишки" class="item-card__img">
+            <div class="item-card__discount">-30%</div>
+          </figure>
+          <div class="item-card__prices">
+            <span class="item-card__price-new">540 ₽</span>
+            <span class="item-card__price-old">890 ₽</span>
+          </div>
+          <div class="item-card__name">Варежки-мишки</div>
+        </li>
+        <li class="goods__item item-card" tabindex="0">
+          <figure class="item-card__poster">
+            <img src="img/item-card-1.jpg" alt="Пара футболок" class="item-card__img">
+            <div class="item-card__discount">-50%</div>
+          </figure>
+          <div class="item-card__prices">
+            <span class="item-card__price-new">1299 ₽</span>
+            <span class="item-card__price-old">2598 ₽</span>
+          </div>
+          <div class="item-card__name">Пара футболок</div>
+        </li>
       </ul>
     </div>
   </section>

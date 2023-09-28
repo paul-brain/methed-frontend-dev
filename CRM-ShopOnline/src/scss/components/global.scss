@@ -96,13 +96,13 @@ fieldset {
   }
 }
 
-@include medium {
+@include large {
   .container {
     padding: 0 34px;
   }
 }
 
-@include small {
+@include medium {
   .container {
     padding: 0 20px;
   }

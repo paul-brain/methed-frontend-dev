@@ -26,7 +26,16 @@
   &__poster {
     position: relative;
     margin-bottom: 20px;
-    // height: 295px;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 295px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   &__discount {
@@ -89,37 +98,12 @@
       max-width: 300px;
     }
   }
-}
-
-@include medium {
-  .profitable {
-    padding-top: 30px;
-    padding-bottom: 80px;
-
-    &__header {
-      margin-bottom: 30px;
-      font-size: 30px;
-    }
-
-    &__list {
-      gap: 40px 20px;
-    }
-
-    &__item {
-      flex: 1 1 160px;
-      max-width: 220px;
-    }
-  }
 
   .item-card {
     &__poster {
       margin-bottom: 15px;
-    }
-
-    &__img {
-      // width: 100%;
-      // height: 100%;
-      object-fit: cover;
+      border-radius: 12px;
+      height: 216px;
     }
 
     &__discount {
@@ -152,6 +136,27 @@
   }
 }
 
+@include medium {
+  .profitable {
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    &__header {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    &__list {
+      gap: 40px 20px;
+    }
+
+    &__item {
+      flex: 1 1 160px;
+      max-width: 220px;
+    }
+  }
+}
+
 @include small {
   .profitable {
     padding-top: 35px;
@@ -175,6 +180,7 @@
   .item-card {
     &__poster {
       margin-bottom: 10px;
+      height: 130px;
     }
 
     &__discount {

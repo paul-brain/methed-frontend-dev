@@ -1,11 +1,42 @@
 import {timer} from './modules/timer.js';
-import {renderBlog} from './modules/render.js';
-import {renderArticle} from './modules/render.js';
+import {updateCartCount} from './modules/helpers.js';
+import render from './modules/render.js';
+import storage from './modules/storage.js';
+import control from './modules/control.js';
+
+const {getStorage} = storage;
+
+const {
+  renderMenuList,
+  renderBlog,
+  renderArticle,
+  renderCategory,
+  renderProduct,
+  renderCart,
+} = render;
+
+const {
+  headerControl,
+  footerControl,
+  productEventsControl,
+  cartEventsControl,
+} = control;
 
 document.addEventListener('DOMContentLoaded', () => {
   const url = new URL(window.location.href);
   const path = url.pathname;
-  console.log(path);
+  const cart = getStorage('cart');
+
+  // Выводим в шапке число: кол-во товаров
+  updateCartCount(cart);
+
+  // Генерируем эл-ты меню в шапке и в футере
+  renderMenuList();
+
+  // События в шапке и футере
+  headerControl(path);
+  footerControl();
+
   // Выводим таймер на главной странице (index.html)
   if (path === '/' || path.includes('index.html')) {
     timer();
@@ -21,38 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderArticle(id);
   }
-});
 
-/* Кнопка "Меню" в шапке: открыть/закрыть выпадающее меню */
-const headerMenuBtn = document.querySelector('.header__menu-btn');
-const headerMenu = document.querySelector('.header__drop');
+  // Рендеринг товаров (category.html и product.html)
+  if (path.includes('category.html')) {
+    const category = url.searchParams.get("cat");
 
-headerMenuBtn.addEventListener('click', () => {
-  headerMenuBtn.classList.toggle('header__menu-btn--close');
-  headerMenu.classList.toggle('header__drop--open');
-});
+    renderCategory(category);
+  } else if (path.includes('product.html')) {
+    const id = url.searchParams.get("id");
 
-document.body.addEventListener('click', ({target}) => {
-  if (
-    ! target.classList.contains('header__menu-btn')
-    && ! target.classList.contains('header__drop')
-    ) {
-    headerMenuBtn.classList.remove('header__menu-btn--close');
-    headerMenu.classList.remove('header__drop--open');
+    renderProduct(id)
+      .then(productElem => productEventsControl(productElem, cart));
   }
-});
 
-/* Меню в футере на мобильной версии */
-const footerMenuName = document.querySelector('.footer__menu-name');
-
-footerMenuName.addEventListener('click', () => {
-  if (screen.width <= 540) {
-    if (footerMenuName.classList.contains('footer__menu-name--opened')) {
-      footerMenuName.classList.remove('footer__menu-name--opened');
-      footerMenuName.nextElementSibling.style.display = 'none';
-    } else {
-      footerMenuName.classList.add('footer__menu-name--opened');
-      footerMenuName.nextElementSibling.style.display = 'flex';
-    }
+  // Рендеринг корзины (cart.html)
+  if (path.includes('cart.html')) {
+    renderCart(cart)
+      .then(cartElem => cartEventsControl(cartElem, cart));
   }
 });
