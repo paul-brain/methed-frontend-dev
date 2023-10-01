@@ -9,13 +9,31 @@ export const timer = () => {
   timerTitle.classList.add('timer__title');
   timerTitle.textContent = 'До конца акции осталось:';
 
-  const {termWrapper: timerDaysWrapper, timerCountElement: timerDaysCountElement} = createTimerBlock('days');
-  const {termWrapper: timerHoursWrapper, timerCountElement: timerHoursCountElement} = createTimerBlock('hours');
-  const {termWrapper: timerMinutesWrapper, timerCountElement: timerMinutesCountElement} = createTimerBlock('minutes');
-  const {termWrapper: timerSecondsWrapper, timerCountElement: timerSecondsCountElement} = createTimerBlock('seconds');
+  const {
+    termWrapper: timerDaysWrapper,
+    timerCountElement: timerDaysCountElement
+  } = createTimerBlock('days');
+  const {
+    termWrapper: timerHoursWrapper,
+    timerCountElement: timerHoursCountElement
+  } = createTimerBlock('hours');
+  const {
+    termWrapper: timerMinutesWrapper,
+    timerCountElement: timerMinutesCountElement
+  } = createTimerBlock('minutes');
+  const {
+    termWrapper: timerSecondsWrapper,
+    timerCountElement: timerSecondsCountElement
+  } = createTimerBlock('seconds');
 
   timerElement.classList.add('timer');
-  timerElement.append(timerTitle, timerDaysWrapper, timerHoursWrapper, timerMinutesWrapper, timerSecondsWrapper);
+  timerElement.append(
+    timerTitle,
+    timerDaysWrapper,
+    timerHoursWrapper,
+    timerMinutesWrapper,
+    timerSecondsWrapper
+  );
 
   const getRightUnit = (num, unit) => {
     let rightWords = {
@@ -73,13 +91,9 @@ export const timer = () => {
 
     if (days > 0) {
       timerSecondsWrapper.remove();
-      // timerItemSeconds.style.display = 'none';
-      // timerItemDays.style.display = 'block';
     } else {
       timerDaysWrapper.remove();
       timerElement.append(timerSecondsWrapper);
-      // timerItemDays.style.display = 'none';
-      // timerItemSeconds.style.display = 'block';
     }
 
     const intervalId = setTimeout(start, 1000);
